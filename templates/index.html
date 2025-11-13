@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>图片标注</title></head>
+<body>
+<h3>当前图片：{{ img }}</h3>
+<div style="display: flex;">
+  <div style="flex:1"><img src="{{ url_for('image_file', filename=img) }}" style="max-width:400px"></div>
+  <form method="post" action="{{ url_for('annotate') }}" style="flex:1">
+      <input type="hidden" name="img" value="{{ img }}">
+      <ul>
+        {% for label in annotation %}
+        <li>
+            <label>
+                <input type="checkbox" name="labels" value="{{ label }}" checked> {{ label }}
+            </label>
+            <button type="button" onclick="this.parentNode.remove();">删除</button>
+        </li>
+        {% endfor %}
+      </ul>
+      <input type="text" id="new_label" placeholder="添加新标签">
+      <button type="button" onclick="addLabel()">添加</button>
+      <br><br>
+      <input type="submit" value="保存并下一张">
+  </form>
+</div>
+<script>
+function addLabel() {
+    var v = document.getElementById('new_label').value.trim();
+    if(!v) return;
+    var ul = document.querySelector('form ul');
+    var li = document.createElement('li');
+    li.innerHTML = `<label><input type="checkbox" name="labels" value="`+ v + `" checked> `+ v +`</label>
+                    <button type="button" onclick="this.parentNode.remove();">删除</button>`;
+    ul.appendChild(li);
+    document.getElementById('new_label').value = '';
+}
+</script>
+<p>
+  <a href="/logout">退出登录</a>
+</p>
+<p>
+  图片切换：
+  {% for fn in images %}
+    <a href='/?img={{ fn }}' {% if fn==img %}style="font-weight:bold"{% endif %}>{{ fn }}</a>
+  {% endfor %}
+</p>
+</body>
+</html>
