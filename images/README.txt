@@ -1,0 +1,1 @@
+Put your image files in this folder (e.g., cat.jpg, dog.jpg). The sample annotations.json references cat.jpg, dog.jpg, tree.png.
