@@ -1,0 +1,163 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535012915260378410\\image\\7535012915260378410_image_1.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌路段",
+          "受损道路"
+        ],
+        "general": [
+          "山体区",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "山体区道路坍塌现场"
+      ],
+      "events": [
+        "人员查看路况"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "经度:114.255098",
+        "纬度:24.227651",
+        "坐标系:WGS84坐标系",
+        "地址:广东省韶关市新丰县马齐田",
+        "时间:2025-08-05 14:39:53",
+        "海拔:564.9米",
+        "天气:26~30℃ 东风",
+        "备注:长按水印编辑备注"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体区"
+        ],
+        "location": [
+          "广东省韶关市新丰县马齐田"
+        ],
+        "infrastructure": [
+          "受损道路"
+        ],
+        "personnel": [
+          "查看路况的人员"
+        ],
+        "activity": [
+          "现场勘查"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "受损道路",
+          "status": "损坏",
+          "operational_status": "完全中断",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌路段",
+          "predicate": "blocking",
+          "object": "受损道路"
+        },
+        {
+          "subject": "查看路况的人员",
+          "predicate": "in",
+          "object": "山体区道路坍塌现场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被塌方阻断",
+          "consequence": "交通暂时无法通行",
+          "action": "设置警示标志，安排清理作业"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535012915260378410\\image\\7535012915260378410_image_3.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "滑坡土体",
+          "倒伏树木",
+          "泥浆水流"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "新丰县黄礤镇马齐田至西草路段塌方车辆暂时无法通行！#山体滑坡"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体坡"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "affected_entity": [
+          "滑坡土体",
+          "倒伏树木"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "滑坡土体",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "倒伏树木",
+          "predicate": "in",
+          "object": "山体体滑坡现场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致道路阻断",
+          "consequence": "交通中断",
+          "action": "封闭该路段，组织清理滑坡体，设置警示标志"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水街道",
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路",
+          "树木",
+          "建筑物",
+          "汽车"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "text": "TONG HAI HOTEL GUESTROOM RDOT",
+          "semantic": "酒店名称及位置信息"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "建筑物",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线，疏散受困车辆"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000014.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水街道",
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路",
+          "汽车",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "text": "深航太极",
+          "semantic": "公司名称或标识"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "积水街道",
+          "predicate": "part_of",
+          "object": "城市街区"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线，疏散受困人员"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535012915260378410\\image\\7535012915260378410_image_1.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的泥土",
+          "坍塌的电线杆"
+        ],
+        "general": [
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "经度：114.255098",
+        "纬度：24.227651",
+        "坐标系：WGS84坐标系",
+        "地址：广东省韶关市新丰县马齐田",
+        "时间：2025-08-05 14:39:53",
+        "海拔：564.9米",
+        "天气：26°~30°C 东风",
+        "备注：长按水印编辑备注"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "电线杆"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体地"
+        ],
+        "response_equipment": [],
+        "location": [
+          "广东省韶关市新丰县马齐田"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "有障碍物",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "泥泞"
+        },
+        {
+          "concept": "电线杆",
+          "status": "坍塌",
+          "risk_level": "高"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌的泥土",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "坍塌的电线杆",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被塌方泥土阻塞",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        },
+        {
+          "condition": "电线杆倒塌",
+          "consequence": "存在触电风险",
+          "action": "立即切断电源，设置警戒线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535012915260378410\\image\\7535012915260378410_image_3.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "滑坡",
+          "倒塌的树木"
+        ],
+        "general": [
+          "泥土",
+          "植被"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "山体体滑坡"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "山体地"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "滑坡",
+          "status": "发生",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "倒塌的树木",
+          "predicate": "in",
+          "object": "滑坡"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡",
+          "consequence": "道路阻塞",
+          "action": "封锁道路，进行清理"
+        }
+      ]
+    }
+  }
+]

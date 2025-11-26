@@ -1,0 +1,78 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534685682930502975\\image\\7534685682930502975_image_1.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "行人",
+          "雨伞",
+          "湿滑人行道",
+          "树木",
+          "共享自行车",
+          "塑料袋"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "雨天街道"
+      ],
+      "events": [
+        "行人撑雨伞行走"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "人行道",
+          "道路"
+        ],
+        "personnel": [
+          "行人"
+        ],
+        "hazard": [],
+        "environment": [
+          "树木"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "人行道",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "行人",
+          "predicate": "involves",
+          "object": "撑雨伞行走"
+        },
+        {
+          "subject": "行人",
+          "predicate": "on",
+          "object": "人行道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "路面湿滑且有积水",
+          "consequence": "存在滑倒风险",
+          "action": "提醒行人注意脚下，穿防滑鞋具"
+        }
+      ]
+    }
+  }
+]

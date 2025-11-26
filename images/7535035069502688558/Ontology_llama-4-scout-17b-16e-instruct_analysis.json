@@ -1,0 +1,72 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535035069502688558\\video\\7535035069502688558_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "暴雨天气的道路"
+      ],
+      "events": [
+        "行驶中的汽车"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "树木"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "树木",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "暴雨天气",
+          "consequence": "道路湿滑，行驶困难",
+          "action": "减速慢行，注意安全"
+        }
+      ]
+    }
+  }
+]

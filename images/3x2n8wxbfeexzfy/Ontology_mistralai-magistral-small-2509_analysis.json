@@ -1,0 +1,73 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2n8wxbfeexzfy\\video\\3x2n8wxbfeexzfy_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "行李箱",
+          "人群",
+          "广告屏"
+        ]
+      },
+      "scenes": [
+        "机场候机大厅"
+      ],
+      "events": [
+        "人员行走"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "香港国际机场"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "机场候机大厅",
+          "广告屏"
+        ],
+        "personnel": [
+          "旅客"
+        ],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "香港国际机场"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "机场候机大厅",
+          "operational_status": "完全可用"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "旅客",
+          "predicate": "in",
+          "object": "机场候机大厅"
+        },
+        {
+          "subject": "广告屏",
+          "predicate": "part_of",
+          "object": "机场候机大厅"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "机场候机大厅正常运行",
+          "consequence": "旅客可以正常通行和等待",
+          "action": "无需特别应急措施"
+        }
+      ]
+    }
+  }
+]

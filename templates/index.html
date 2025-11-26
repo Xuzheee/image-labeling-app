@@ -1,48 +1,347 @@
-<!doctype html>
-<html>
-<head><meta charset="utf-8"><title>图片标注</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Labeling Tool</title>
+    <!-- 引入 Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入 Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+        body { 
+            height: 100vh; 
+            overflow: hidden; 
+            background-color: #f0f2f5; /* 更柔和的背景色 */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 顶部导航栏 */
+        .navbar {
+            flex-shrink: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        /* 主容器 */
+        .main-wrapper {
+            flex-grow: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* 左侧图片区 */
+        .image-panel {
+            flex: 1;
+            background-color: #212529;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 20px;
+        }
+        
+        .image-panel img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* 右侧编辑器区 */
+        .editor-panel {
+            width: 450px; /* 固定宽度或使用 flex-basis */
+            background-color: #fff;
+            border-left: 1px solid #dee2e6;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.03);
+        }
+
+        .editor-scroll-area {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 25px;
+        }
+
+        .editor-footer {
+            padding: 15px 25px;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        /* 标签列表样式 */
+        .tag-list { list-style: none; padding: 0; }
+        .tag-list li { margin-bottom: 8px; }
+        
+        /* 输入框美化 */
+        .input-group-text { background-color: #f8f9fa; border-color: #dee2e6; color: #6c757d; }
+        .form-control:focus { box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15); border-color: #86b7fe; }
+
+        /* 关系三元组样式 */
+        .relation-item {
+            background: #fff;
+            padding: 5px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            transition: all 0.2s;
+        }
+        .relation-item:hover { background-color: #f8f9fa; }
+        .relation-item input { font-size: 0.9rem; }
+        
+        /* 标题样式 */
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #adb5bd;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
+</head>
 <body>
-<h3>当前图片：{{ img }}</h3>
-<div style="display: flex;">
-  <div style="flex:1"><img src="{{ url_for('image_file', filename=img) }}" style="max-width:400px"></div>
-  <form method="post" action="{{ url_for('annotate') }}" style="flex:1">
-      <input type="hidden" name="img" value="{{ img }}">
-      <ul>
-        {% for label in annotation %}
-        <li>
-            <label>
-                <input type="checkbox" name="labels" value="{{ label }}" checked> {{ label }}
-            </label>
-            <button type="button" onclick="this.parentNode.remove();">删除</button>
-        </li>
-        {% endfor %}
-      </ul>
-      <input type="text" id="new_label" placeholder="添加新标签">
-      <button type="button" onclick="addLabel()">添加</button>
-      <br><br>
-      <input type="submit" value="保存并下一张">
-  </form>
+
+<!-- 1. 顶部导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-light px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-primary" href="#">
+            <i class="bi bi-tags-fill me-2"></i>LabelTool
+        </a>
+        
+        <div class="d-flex align-items-center gap-3">
+            <span class="badge bg-light text-dark border">
+                Current: {{ current_index }} / {{ total }}
+            </span>
+            
+            <a href="/download" class="btn btn-outline-success btn-sm" title="Download JSON">
+                <i class="bi bi-download me-1"></i> Export Data
+            </a>
+            
+            <a href="/logout" class="btn btn-outline-danger btn-sm">
+                <i class="bi bi-box-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- 2. 主体内容 -->
+<div class="main-wrapper">
+    
+    <!-- 左侧：图片显示 -->
+    <div class="image-panel">
+        <img src="{{ url_for('image_file', filename=data.image) }}" 
+             onerror="this.src=''; this.alt='Image load failed (404).'; this.style.color='#fff';">
+    </div>
+
+    <!-- 右侧：编辑表单 -->
+    <div class="editor-panel">
+        <form action="/annotate" method="POST" id="annoForm" class="d-flex flex-column h-100">
+            <input type="hidden" name="image_name" value="{{ data.image }}">
+            <input type="hidden" name="next_img_name" value="{{ next_img }}">
+
+            <div class="editor-scroll-area">
+                <!-- 文件名提示 -->
+                <div class="alert alert-secondary py-2 small mb-4 d-flex align-items-center">
+                    <i class="bi bi-file-earmark-image me-2"></i>
+                    <div class="text-truncate" title="{{ data.image }}">{{ data.image }}</div>
+                </div>
+
+                <!-- Concepts 部分 -->
+                <div class="mb-4">
+                    <div class="section-title"><i class="bi bi-lightbulb"></i> Concepts</div>
+                    <ul class="tag-list" id="list-concepts">
+                        {% for item in data.concepts %}
+                        <li>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" name="concepts" value="{{ item }}">
+                                <button type="button" class="btn btn-outline-danger" onclick="this.closest('li').remove()">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="input-group input-group-sm mt-2">
+                        <input type="text" class="form-control" id="new-concept-input" placeholder="New concept..." onkeydown="if(event.key==='Enter'){event.preventDefault(); addItem('list-concepts', 'new-concept-input', 'concepts');}">
+                        <button class="btn btn-primary" type="button" onclick="addItem('list-concepts', 'new-concept-input', 'concepts')">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Attributes 部分 -->
+                <div class="mb-4">
+                    <div class="section-title"><i class="bi bi-list-check"></i> Attributes</div>
+                    <ul class="tag-list" id="list-attributes">
+                        {% for item in data.attributes %}
+                        <li>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" name="attributes" value="{{ item }}">
+                                <button type="button" class="btn btn-outline-danger" onclick="this.closest('li').remove()">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="input-group input-group-sm mt-2">
+                        <input type="text" class="form-control" id="new-attr-input" placeholder="New attribute..." onkeydown="if(event.key==='Enter'){event.preventDefault(); addItem('list-attributes', 'new-attr-input', 'attributes');}">
+                        <button class="btn btn-primary" type="button" onclick="addItem('list-attributes', 'new-attr-input', 'attributes')">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Relations 部分 -->
+                <div class="mb-4">
+                    <div class="section-title"><i class="bi bi-share"></i> Relations</div>
+                    
+                    <input type="hidden" name="relations" id="hidden-relations" value='{{ data.relations | tojson }}'>
+
+                    <ul class="tag-list" id="list-relations">
+                        {% for triple in data.relations %}
+                        <li class="relation-item">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-white">S</span>
+                                <input type="text" class="form-control rel-sub" value="{{ triple[0] }}" oninput="updateRelationsJSON()">
+                                <span class="input-group-text bg-white">P</span>
+                                <input type="text" class="form-control rel-pred" value="{{ triple[1] }}" oninput="updateRelationsJSON()">
+                                <span class="input-group-text bg-white">O</span>
+                                <input type="text" class="form-control rel-obj" value="{{ triple[2] }}" oninput="updateRelationsJSON()">
+                                <button type="button" class="btn btn-outline-danger" onclick="removeRelation(this)">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <div class="card bg-light border-0 mt-2 p-2">
+                        <div class="input-group input-group-sm mb-1">
+                            <input type="text" class="form-control" id="new-rel-sub" placeholder="Subject">
+                            <input type="text" class="form-control" id="new-rel-pred" placeholder="Predicate">
+                            <input type="text" class="form-control" id="new-rel-obj" placeholder="Object">
+                        </div>
+                        <button class="btn btn-primary btn-sm w-100" type="button" onclick="addRelation()">
+                            <i class="bi bi-plus-lg me-1"></i> Add Relation
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部固定按钮区 -->
+            <div class="editor-footer d-grid gap-2">
+                <button type="submit" class="btn btn-primary py-2 fw-bold shadow-sm">
+                    <i class="bi bi-save me-2"></i>Save & Next (Ctrl+S)
+                </button>
+                <div class="d-flex gap-2">
+                    <a href="{{ url_for('index', img=prev_img) }}" class="btn btn-light border flex-fill">
+                        <i class="bi bi-arrow-left"></i> Prev
+                    </a>
+                    <a href="{{ url_for('index', img=next_img) }}" class="btn btn-light border flex-fill">
+                        Next <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
+
 <script>
-function addLabel() {
-    var v = document.getElementById('new_label').value.trim();
-    if(!v) return;
-    var ul = document.querySelector('form ul');
-    var li = document.createElement('li');
-    li.innerHTML = `<label><input type="checkbox" name="labels" value="`+ v + `" checked> `+ v +`</label>
-                    <button type="button" onclick="this.parentNode.remove();">删除</button>`;
-    ul.appendChild(li);
-    document.getElementById('new_label').value = '';
-}
+    // 通用添加函数
+    function addItem(listId, inputId, fieldName) {
+        var input = document.getElementById(inputId);
+        var value = input.value.trim();
+        if (!value) return;
+        
+        var ul = document.getElementById(listId);
+        var li = document.createElement('li');
+        li.innerHTML = `
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control" name="${fieldName}" value="${value}">
+                <button type="button" class="btn btn-outline-danger" onclick="this.closest('li').remove()">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </div>
+        `;
+        ul.appendChild(li);
+        input.value = '';
+        input.focus();
+        // 滚动到底部
+        li.scrollIntoView({behavior: "smooth", block: "nearest"});
+    }
+
+    // 更新 Relations JSON
+    function updateRelationsJSON() {
+        var list = document.getElementById('list-relations');
+        var items = list.querySelectorAll('li');
+        var relations = [];
+        
+        items.forEach(function(li) {
+            var sub = li.querySelector('.rel-sub').value.trim();
+            var pred = li.querySelector('.rel-pred').value.trim();
+            var obj = li.querySelector('.rel-obj').value.trim();
+            if (sub || pred || obj) {
+                relations.push([sub, pred, obj]);
+            }
+        });
+        document.getElementById('hidden-relations').value = JSON.stringify(relations);
+    }
+
+    // 添加 Relation
+    function addRelation() {
+        var s = document.getElementById('new-rel-sub').value.trim();
+        var p = document.getElementById('new-rel-pred').value.trim();
+        var o = document.getElementById('new-rel-obj').value.trim();
+        
+        if(!s && !p && !o) return;
+        
+        var ul = document.getElementById('list-relations');
+        var li = document.createElement('li');
+        li.className = "relation-item";
+        li.innerHTML = `
+            <div class="input-group input-group-sm">
+                <span class="input-group-text bg-white">S</span>
+                <input type="text" class="form-control rel-sub" value="${s}" oninput="updateRelationsJSON()">
+                <span class="input-group-text bg-white">P</span>
+                <input type="text" class="form-control rel-pred" value="${p}" oninput="updateRelationsJSON()">
+                <span class="input-group-text bg-white">O</span>
+                <input type="text" class="form-control rel-obj" value="${o}" oninput="updateRelationsJSON()">
+                <button type="button" class="btn btn-outline-danger" onclick="removeRelation(this)">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        `;
+        ul.appendChild(li);
+        
+        document.getElementById('new-rel-sub').value = '';
+        document.getElementById('new-rel-pred').value = '';
+        document.getElementById('new-rel-obj').value = '';
+        document.getElementById('new-rel-sub').focus();
+        
+        updateRelationsJSON();
+        li.scrollIntoView({behavior: "smooth", block: "nearest"});
+    }
+
+    function removeRelation(btn) {
+        btn.closest('li').remove();
+        updateRelationsJSON();
+    }
+
+    // 快捷键
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === 's') {
+            event.preventDefault();
+            document.querySelector('#annoForm').submit();
+        }
+    });
 </script>
-<p>
-  <a href="/logout">退出登录</a>
-</p>
-<p>
-  图片切换：
-  {% for fn in images %}
-    <a href='/?img={{ fn }}' {% if fn==img %}style="font-weight:bold"{% endif %}>{{ fn }}</a>
-  {% endfor %}
-</p>
 </body>
 </html>

@@ -1,0 +1,67 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534805318090738985\\video\\7534805318090738985_video_semantic_frame_000006.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "树木",
+          "建筑物",
+          "交通标志牌",
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "交通标志牌"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "交通标志牌",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "天空呈现异常粉紫色，能见度较低",
+          "consequence": "可能影响夜间行车安全与导航判断",
+          "action": "提醒驾驶员减速慢行，开启车灯，注意观察路标"
+        }
+      ]
+    }
+  }
+]

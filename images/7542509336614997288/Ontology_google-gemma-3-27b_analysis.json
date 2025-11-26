@@ -1,0 +1,833 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000002.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水街道"
+        ],
+        "general": [
+          "道路",
+          "汽车"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电救援解你燃眉之急",
+          "semantic": "提醒广州车主注意电动汽车充电服务。"
+        },
+        {
+          "content": "新能源汽车半路没电的尴尬",
+          "semantic": "描述新能源汽车没电的情况。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "广州"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "广州",
+          "predicate": "is_a",
+          "object": "location"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断，车辆无法通行",
+          "action": "启用备用路线或提供紧急救援服务。"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水街道"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电救援解你燃眉之急",
+          "semantic": "警告信息，提示广州车主注意电动汽车充电服务。"
+        },
+        {
+          "content": "广州车主都懂",
+          "semantic": "表明该信息为广州本地车主的共识。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "广州"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "积水街道",
+          "predicate": "near",
+          "object": "广州"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断，车辆无法通行",
+          "action": "启用备用路线或提供紧急救援服务。"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路",
+          "汽车"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电驳解你燃眉之急",
+          "semantic": "提醒广州车主，提供紧急充电服务。"
+        },
+        {
+          "content": "极电侠移动充电救到啦",
+          "semantic": "表示提供紧急充电服务已到达现场。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "移动充电车"
+        ],
+        "location": [
+          "广州"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "被淹的的汽车",
+          "damage_status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "near",
+          "object": "道路"
+        },
+        {
+          "subject": "移动充电车",
+          "predicate": "involves",
+          "object": "应急充电服务"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "车辆被淹",
+          "consequence": "可能导致交通中断，影响出行。",
+          "action": "提供紧急救援和疏散服务。"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水街道"
+        ],
+        "general": [
+          "树木",
+          "电线杆"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极易被移动充电救援解你燃眉之急",
+          "semantic": "提醒广州车主注意道路积水情况，提供救援服务。"
+        },
+        {
+          "content": "24小时全城覆盖",
+          "semantic": "表示救援服务全天候覆盖整个城市。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水街道",
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "广州"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的道路",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "广州",
+          "predicate": "is_a",
+          "object": "location"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000012.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水街道"
+        ],
+        "general": [
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极速充电移动充帮你燃眉之急",
+          "semantic": "提醒广州车主注意，提供紧急充电服务。"
+        },
+        {
+          "content": "专业汽车30分钟抵达现场",
+          "semantic": "说明服务响应时间。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "积水街道",
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "广州"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水街道",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "积水街道",
+          "predicate": "part_of",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000013.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水街道"
+        ],
+        "general": [
+          "道路",
+          "交通标志"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充数缓解你燃眉之急",
+          "semantic": "提示车主注意充电服务。"
+        },
+        {
+          "content": "15分钟钟快充免航30公里",
+          "semantic": "宣传充电速度和续航里程。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水街道",
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "交通标志",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000016.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路",
+          "树木",
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电救驾解你燃眉之急",
+          "semantic": "提醒广州车主，提供移动充电服务。"
+        },
+        {
+          "content": "电动车/混动车全系适用",
+          "semantic": "说明提供的服务对象为电动车和混动车。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "广州"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "被淹的的汽车",
+          "damage_status": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "积水街道",
+          "predicate": "near",
+          "object": "树木"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        },
+        {
+          "condition": "车辆被淹",
+          "consequence": "存在安全隐患",
+          "action": "提供救援服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000019.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电帮你燃眉之急",
+          "semantic": "提醒广州车主使用移动充电服务。"
+        },
+        {
+          "content": "暴雨天照样上门服务",
+          "semantic": "说明即使在暴雨天气也能提供上门服务。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "广州"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "道路",
+          "predicate": "in_status_of",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通受阻，车辆无法通行",
+          "action": "建议绕行或等待雨势减弱"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000020.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "充电设备"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电救驾缓解你燃眉之急",
+          "semantic": "提醒广州车主使用移动充电服务。"
+        },
+        {
+          "content": "上周珠江新城城王先生实测：充电效率比预期快20%",
+          "semantic": "提供用户使用反馈，显示充电效率较高。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "充电设备"
+        ],
+        "location": [
+          "广州",
+          "珠江新城"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "充电设备",
+          "operational_status": "完全可用",
+          "visibility": "清晰"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "车辆电量不足",
+          "consequence": "可能导致无法行驶",
+          "action": "使用移动充电服务。"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000021.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "三角警示牌"
+        ],
+        "general": [
+          "汽车",
+          "树木",
+          "建筑物"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电救驾解你燃眉之急",
+          "semantic": "提醒广州车主注意，提供移动充电服务。"
+        },
+        {
+          "content": "上周珠江新城王先生实测：充电效率比预期快20%",
+          "semantic": "显示充电效率测试结果。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "广州",
+          "珠江新城"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "三角警示牌",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通受阻，存在安全隐患",
+          "action": "设置警示标志，引导车辆绕行。"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000030.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水街道"
+        ],
+        "general": [
+          "道路",
+          "树木",
+          "交通标志"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极易发生移动充电救援，你燃眉之急",
+          "semantic": "警告车主注意移动充电救援风险。"
+        },
+        {
+          "content": "快来点击头像到主页致敬电联系吧",
+          "semantic": "引导用户点击链接联系。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的道路",
+          "predicate": "in",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断，可能导致车辆涉水风险",
+          "action": "建议绕行或等待积水消退。"
+        }
+      ]
+    }
+  }
+]

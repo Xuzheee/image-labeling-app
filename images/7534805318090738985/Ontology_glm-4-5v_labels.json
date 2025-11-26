@@ -1,0 +1,52 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534805318090738985\\video\\7534805318090738985_video_semantic_frame_000006.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [
+        "暴雨城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "#雷雨",
+        "#闪电",
+        "#暴雨来袭"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "城市街道"
+        ],
+        "infrastructure": [
+          "城市街道"
+        ],
+        "location": [],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "城市街道处于暴雨天气",
+          "consequence": "可能影响交通通行",
+          "action": "提醒驾驶员减速慢行，注意安全"
+        }
+      ]
+    }
+  }
+]

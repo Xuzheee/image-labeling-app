@@ -1,0 +1,256 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534626070551088422\\video\\7534626070551088422_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "非十万火急 今天不要来樟木头"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534626070551088422\\video\\7534626070551088422_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水街道"
+        ],
+        "general": [
+          "树木",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "非十万火急 今天不要来樟木头"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水街道",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "避免前往该区域"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534626070551088422\\video\\7534626070551088422_video_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的卡车",
+          "积水街道"
+        ],
+        "general": [
+          "隧道"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "非十万火急，今天不要来樟木头"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "隧道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "隧道",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的卡车",
+          "predicate": "in",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "隧道被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534626070551088422\\video\\7534626070551088422_video_semantic_frame_000014.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "非十万火急，今天不要来樟木头"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  }
+]

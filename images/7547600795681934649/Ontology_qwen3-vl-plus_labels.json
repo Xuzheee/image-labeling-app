@@ -1,0 +1,189 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水河流",
+          "被淹的河岸"
+        ],
+        "general": [
+          "街区建筑",
+          "在建工地",
+          "起重机",
+          "树木",
+          "电线杆"
+        ]
+      },
+      "scenes": [
+        "积水河流",
+        "城市河岸"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水河流",
+          "电线杆",
+          "在建工地"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流",
+          "城市河岸"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市河岸"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水河流",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "河岸",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "积水河流",
+          "predicate": "near",
+          "object": "街区建筑"
+        },
+        {
+          "subject": "积水河流",
+          "predicate": "in",
+          "object": "城市河岸"
+        },
+        {
+          "subject": "电线杆",
+          "predicate": "near",
+          "object": "积水河流"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水漫过河岸，逼近城市建筑",
+          "consequence": "可能威胁沿岸基础设施与人员安全",
+          "action": "启动沿岸警戒，疏散低洼区域人员，监测水位变化"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000028.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的步道",
+          "浑浊积水",
+          "散落垃圾"
+        ],
+        "general": [
+          "砖砌路缘",
+          "草地",
+          "泥土斜坡"
+        ]
+      },
+      "scenes": [
+        "积水漫灌步道",
+        "城市排水区"
+      ],
+      "events": [
+        "积水漫溢",
+        "垃圾漂浮"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "被淹的的步道",
+          "砖砌路缘"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "草地",
+          "泥土斜坡"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市排水区"
+        ],
+        "activity": [
+          "洪水漫溢"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "被淹的的步道",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "砖砌路缘",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的步道",
+          "predicate": "in",
+          "object": "城市排水区"
+        },
+        {
+          "subject": "散落垃圾",
+          "predicate": "in",
+          "object": "浑浊积水"
+        },
+        {
+          "subject": "砖砌路缘",
+          "predicate": "blocking",
+          "object": "积水漫溢路径"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水漫过步道并携带垃圾",
+          "consequence": "通行受阻，存在卫生与滑倒风险",
+          "action": "设置警示标志，安排排水与清淤作业"
+        }
+      ]
+    }
+  }
+]

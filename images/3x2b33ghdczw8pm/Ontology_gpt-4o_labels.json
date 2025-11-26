@@ -1,0 +1,115 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "吊灯",
+          "天花板"
+        ]
+      },
+      "scenes": [
+        "室内"
+      ],
+      "events": [],
+      "time": [
+        "不确定"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "不确定"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "室内"
+        ],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "临时床位"
+        ],
+        "general": [
+          "人群",
+          "室内环境"
+        ]
+      },
+      "scenes": [
+        "避难所"
+      ],
+      "events": [
+        "人员休息"
+      ],
+      "time": [
+        "不确定"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "不确定"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "室内环境"
+        ],
+        "response_equipment": [
+          "临时床位"
+        ],
+        "location": [
+          "避难所"
+        ],
+        "activity": [
+          "人员休息"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "避难所",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "临时床位",
+          "predicate": "in",
+          "object": "避难所"
+        },
+        {
+          "subject": "人群",
+          "predicate": "in",
+          "object": "避难所"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "人员在避难所休息",
+          "consequence": "提供安全庇护",
+          "action": "继续提供支持和物资"
+        }
+      ]
+    }
+  }
+]

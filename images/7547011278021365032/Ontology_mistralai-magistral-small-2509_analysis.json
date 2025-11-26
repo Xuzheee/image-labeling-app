@@ -1,0 +1,125 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水道路",
+          "雨伞"
+        ],
+        "general": [
+          "建筑物",
+          "汽车",
+          "交通信号灯"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [
+        "下雨",
+        "行人使用雨伞"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "建筑物",
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "城市街道"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "行人",
+          "predicate": "in",
+          "object": "城市街道"
+        },
+        {
+          "subject": "暴雨",
+          "predicate": "causes",
+          "object": "积水道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路积水",
+          "consequence": "行车和行人通行受阻",
+          "action": "加强排水，提醒行人和司机注意安全"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000014.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水道路"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "城市街道",
+          "积水道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "城市街道",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

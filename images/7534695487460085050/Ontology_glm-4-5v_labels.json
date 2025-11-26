@@ -1,0 +1,408 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水",
+          "杂物"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "积水现场"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水",
+          "status": "流动",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "杂物",
+          "predicate": "in",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水覆盖道路",
+          "consequence": "交通中断",
+          "action": "司机绕行"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "湿滑道路"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "夜间道路场景"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "environment": [
+          "夜间环境"
+        ],
+        "location": [],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "湿滑"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "卡车",
+          "predicate": "on",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "夜间湿滑道路",
+          "consequence": "交通事故风险增加",
+          "action": "减速慢行，开启警示灯"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000013.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "积水覆盖的道路"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "infrastructure": [
+          "被淹的的道路"
+        ],
+        "location": [
+          "肇庆段道路道路"
+        ],
+        "environment": [
+          "河流"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "被淹的的道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水且有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的道路",
+          "predicate": "in",
+          "object": "积水"
+        },
+        {
+          "subject": "积水",
+          "predicate": "causes",
+          "object": "道路被淹的"
+        },
+        {
+          "subject": "被淹的的道路",
+          "predicate": "blocking",
+          "object": "交通"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被洪水淹没",
+          "consequence": "交通中断",
+          "action": "绕行其他路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000019.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "湍急的水流",
+          "被冲刷的道路"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "积水泛滥区域"
+      ],
+      "events": [
+        "水流湍急流动"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "积水区域"
+        ],
+        "infrastructure": [
+          "道路道路"
+        ],
+        "affected_entity": [
+          "被冲刷的道路道路"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "湍急的水流",
+          "predicate": "in",
+          "object": "积水区域"
+        },
+        {
+          "subject": "被冲刷的道路",
+          "predicate": "is_a",
+          "object": "道路道路"
+        },
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "积水区域"
+        },
+        {
+          "subject": "道路道路",
+          "predicate": "in_status_of",
+          "object": "损坏"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "高速公路被洪水冲刷成河道",
+          "consequence": "交通通行中断",
+          "action": "司机绕行，启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000021.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全",
+        "语义：提示肇庆段因特大暴雨引发山体滑坡，高速公路变为河道，交通中断，提醒司机绕行"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [],
+        "environment": [],
+        "infrastructure": [],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000026.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "泥泞水流",
+          "被淹的没的道路"
+        ],
+        "general": [
+          "树木"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡后的河流场景"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "河流"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "affected_entity": [
+          "被淹的没的道路"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "泥泞水流",
+          "status": "流动",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "道路",
+          "predicate": "in",
+          "object": "河流"
+        },
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "河流形成"
+        },
+        {
+          "subject": "泥泞水流",
+          "predicate": "blocking",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被泥泞水流淹没",
+          "consequence": "交通通行中断",
+          "action": "司机绕行其他路线"
+        }
+      ]
+    }
+  }
+]

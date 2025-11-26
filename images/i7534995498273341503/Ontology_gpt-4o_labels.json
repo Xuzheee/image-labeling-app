@@ -1,0 +1,456 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7534995498273341503\\i7534995498273341503_video_1_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "建筑",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "住房城乡建设厅交通运输厅文旅厅"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "城市街区"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "建筑",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7534995498273341503\\i7534995498273341503_video_1_semantic_frame_000014.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "警用摩托车"
+        ],
+        "general": [
+          "树木",
+          "道路"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [
+        "警察骑摩托车巡逻"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "已出现大暴雨到特大暴雨"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [
+          "警察"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [
+          "警用摩托车"
+        ],
+        "location": [],
+        "activity": [
+          "巡逻"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "警察",
+          "predicate": "involves",
+          "object": "巡逻"
+        },
+        {
+          "subject": "警用摩托车",
+          "predicate": "is_used_for",
+          "object": "巡逻"
+        },
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7534995498273341503\\i7534995498273341503_video_1_semantic_frame_000017.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路",
+          "树木",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "预计5-6日我省强降雨将持续"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7534995498273341503\\i7534995498273341503_video_1_semantic_frame_000033.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水街道"
+        ],
+        "general": [
+          "路灯",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "行车避开积水区"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水街道",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "洪水街道",
+          "consequence": "交通中断",
+          "action": "行车避开积水区"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7534995498273341503\\i7534995498273341503_video_1_semantic_frame_000034.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水街道"
+        ],
+        "general": [
+          "建筑物",
+          "桥梁"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "行车避开积水区"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水街道",
+          "桥梁"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水街道",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "积水",
+          "predicate": "causes",
+          "object": "积水街道"
+        },
+        {
+          "subject": "桥梁",
+          "predicate": "near",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水街道",
+          "consequence": "交通中断",
+          "action": "行车避开积水区"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7534995498273341503\\i7534995498273341503_video_1_semantic_frame_000035.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水街道"
+        ],
+        "general": [
+          "建筑物"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "不要贸然涉水削坡建房"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水街道",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "洪水街道",
+          "consequence": "交通中断",
+          "action": "避免行车，寻找高地避险"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7534995498273341503\\i7534995498273341503_video_1_semantic_frame_000049.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水"
+        ],
+        "general": [
+          "建筑物",
+          "桥梁"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "省预警中心8月5日发布"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "桥梁"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "积水",
+          "predicate": "near",
+          "object": "建筑物"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水淹没街道",
+          "consequence": "交通中断",
+          "action": "建议避开该区域"
+        }
+      ]
+    }
+  }
+]

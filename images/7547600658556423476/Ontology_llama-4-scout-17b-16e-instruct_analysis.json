@@ -1,0 +1,305 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "树木",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "location": [
+          "街道"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "城市街区",
+          "consequence": "",
+          "action": ""
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "叉车",
+          "蓝色卡车"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "城市街道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "叉车",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "城市街道",
+          "consequence": "",
+          "action": ""
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000006.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "手"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [
+        "维修设备"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [
+          "人"
+        ],
+        "hazard": [],
+        "environment": [
+          "城市街道"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "维修"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "人",
+          "predicate": "在",
+          "object": "城市街道"
+        },
+        {
+          "subject": "手",
+          "predicate": "拿着",
+          "object": "工具"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "设备维修中",
+          "consequence": "可能影响交通",
+          "action": "注意周围车辆和行人安全"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "蓝色卡车",
+          "红色机械设备"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街道"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "城市街道",
+          "consequence": "",
+          "action": ""
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "叉车",
+          "地面"
+        ]
+      },
+      "scenes": [
+        "仓库或工厂内部"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "仓库或工厂内部"
+        ],
+        "personnel": [
+          "人员"
+        ],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "叉车",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "人员",
+          "predicate": "near",
+          "object": "叉车"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "叉车位于仓库或工厂内部",
+          "consequence": "",
+          "action": ""
+        }
+      ]
+    }
+  }
+]

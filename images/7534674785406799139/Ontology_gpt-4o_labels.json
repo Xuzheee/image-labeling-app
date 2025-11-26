@@ -1,0 +1,154 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车",
+          "建筑",
+          "树木",
+          "人群"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [
+        "人员活动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑"
+        ],
+        "personnel": [
+          "人群"
+        ],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "测体温"
+        ]
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000009.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "建筑",
+          "摩托车"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "自行车",
+          "摩托车",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "城市街区"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

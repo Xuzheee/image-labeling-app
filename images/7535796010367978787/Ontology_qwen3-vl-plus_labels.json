@@ -1,0 +1,763 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "滑坡体",
+          "坍塌的房屋",
+          "救援挖掘机",
+          "救援人员",
+          "临时帐篷",
+          "被掩埋的建筑"
+        ],
+        "general": [
+          "树木",
+          "道路",
+          "电线杆",
+          "居民楼",
+          "山体体"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场",
+        "受灾居民区",
+        "救援作业现场"
+      ],
+      "events": [
+        "山体体滑坡",
+        "房屋坍塌",
+        "救援人员清理废墟",
+        "挖掘机作业",
+        "物资分发"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "text": "广州白云加油 向所有救灾人员致敬",
+          "semantic": "表达对灾区的支持与对救援人员的敬意"
+        },
+        {
+          "text": "大表哥航拍",
+          "semantic": "标注拍摄者或来源"
+        },
+        {
+          "text": "广州白云 8月7日上午拍",
+          "semantic": "提供地理位置与拍摄时间信息"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "山体体",
+          "居民区"
+        ],
+        "location": [
+          "广州白云"
+        ],
+        "infrastructure": [
+          "道路",
+          "房屋",
+          "电线杆"
+        ],
+        "personnel": [
+          "救援人员",
+          "受灾群众"
+        ],
+        "response_equipment": [
+          "挖掘机",
+          "起重机",
+          "临时帐篷",
+          "救援汽车"
+        ],
+        "affected_entity": [
+          "坍塌的房屋",
+          "被掩埋的建筑",
+          "受损的道路"
+        ],
+        "activity": [
+          "救援",
+          "清理废墟",
+          "物资分发"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "房屋",
+          "status": "坍塌",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "山体体",
+          "status": "滑坡",
+          "risk_level": "高",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "救援人员",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "一般"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "滑坡体",
+          "predicate": "causes",
+          "object": "房屋坍塌"
+        },
+        {
+          "subject": "坍塌的房屋",
+          "predicate": "in",
+          "object": "居民区"
+        },
+        {
+          "subject": "救援挖掘机",
+          "predicate": "is_used_for",
+          "object": "清理废墟"
+        },
+        {
+          "subject": "临时帐篷",
+          "predicate": "in",
+          "object": "救援作业现场"
+        },
+        {
+          "subject": "救援人员",
+          "predicate": "involves",
+          "object": "救援"
+        },
+        {
+          "subject": "滑坡体",
+          "predicate": "blocking",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致多栋房屋倒塌并阻断道路",
+          "consequence": "居民被困，交通中断，救援通道受阻",
+          "action": "优先打通生命通道，疏散周边居民，加强边坡监测防止二次滑坡"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000001.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的房屋",
+          "挖掘机",
+          "建筑废墟",
+          "滑坡山体体"
+        ],
+        "general": [
+          "树木",
+          "道路",
+          "居民楼"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场",
+        "建筑受损区",
+        "城市边缘山体坡"
+      ],
+      "events": [
+        "房屋坍塌",
+        "滑坡发生",
+        "救援设备作业"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "text": "广州白云 8月7日上午拍",
+          "meaning": "标明拍摄地点与时间，佐证灾害发生于广州白云区上午时段"
+        },
+        {
+          "text": "大表哥航拍",
+          "meaning": "表明图像来源为无人机航拍，支持高空视角真实性"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "山体坡",
+          "植被覆盖区"
+        ],
+        "location": [
+          "广州白云区",
+          "居民街区"
+        ],
+        "infrastructure": [
+          "房屋",
+          "道路"
+        ],
+        "personnel": [],
+        "response_equipment": [
+          "挖掘机"
+        ],
+        "affected_entity": [
+          "坍塌的房屋",
+          "建筑废墟"
+        ],
+        "activity": [
+          "清理废墟",
+          "灾后评估"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "房屋",
+          "status": "坍塌",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "山体坡",
+          "status": "滑坡",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "挖掘机",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌的房屋",
+          "predicate": "in",
+          "object": "滑坡山体体"
+        },
+        {
+          "subject": "挖掘机",
+          "predicate": "is_used_for",
+          "object": "清理废墟"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "房屋坍塌"
+        },
+        {
+          "subject": "建筑废墟",
+          "predicate": "blocking",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "房屋因滑坡倒塌，现场有大型机械作业",
+          "consequence": "存在二次坍塌风险，交通受阻",
+          "action": "划定警戒区，持续监测边坡稳定性，启用应急通道"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000002.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "挖掘机",
+          "消防车",
+          "应急帐篷",
+          "救援人员",
+          "泥石流堆积物",
+          "受损道路"
+        ],
+        "general": [
+          "汽车",
+          "建筑物",
+          "树木",
+          "道路",
+          "停车场"
+        ]
+      },
+      "scenes": [
+        "泥石流灾害现场",
+        "城市街区",
+        "应急指挥区"
+      ],
+      "events": [
+        "救援人员集结",
+        "挖掘机清理废墟",
+        "物资分发准备"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大表哥航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "泥石流"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "location": [
+          "白云山体体滑坡现场"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑物",
+          "停车场"
+        ],
+        "personnel": [
+          "救援人员",
+          "受灾群众"
+        ],
+        "response_equipment": [
+          "挖掘机",
+          "消防车",
+          "应急帐篷",
+          "发电机"
+        ],
+        "affected_entity": [
+          "受损道路",
+          "泥石流堆积物"
+        ],
+        "activity": [
+          "救援",
+          "清理废墟",
+          "物资分发准备"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "建筑物",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "泥石流堆积物",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "挖掘机",
+          "predicate": "is_used_for",
+          "object": "清理废墟"
+        },
+        {
+          "subject": "救援人员",
+          "predicate": "involves",
+          "object": "物资分发准备"
+        },
+        {
+          "subject": "泥石流堆积物",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "应急帐篷",
+          "predicate": "near",
+          "object": "救援人员"
+        },
+        {
+          "subject": "消防车",
+          "predicate": "in_status_of",
+          "object": "完全可用"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被泥石流堆积物阻断",
+          "consequence": "交通中断，影响救援效率",
+          "action": "优先清理主干道，启用临时通道"
+        },
+        {
+          "condition": "多台挖掘机集中作业",
+          "consequence": "废墟清理进度加快",
+          "action": "协调设备轮班，保障持续作业"
+        },
+        {
+          "condition": "应急帐篷与救援人员聚集",
+          "consequence": "形成临时指挥与物资集散中心",
+          "action": "加强后勤保障，确保物资有序分发"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的屋顶",
+          "受损的建筑结构",
+          "散落瓦片",
+          "倾斜的太阳能热水器"
+        ],
+        "general": [
+          "阳台",
+          "金属护栏",
+          "砖墙",
+          "绿植",
+          "卷帘门"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡影响区",
+        "居民楼受损现场"
+      ],
+      "events": [
+        "建筑结构坍塌",
+        "屋顶瓦片滑落"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大表哥航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "居民楼",
+          "屋顶",
+          "阳台",
+          "太阳能热水器"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "山体坡",
+          "街区"
+        ],
+        "response_equipment": [],
+        "location": [
+          "居民楼顶层",
+          "阳台区域"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "屋顶",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "居民楼",
+          "status": "区域损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌的屋顶",
+          "predicate": "part_of",
+          "object": "居民楼"
+        },
+        {
+          "subject": "散落瓦片",
+          "predicate": "on",
+          "object": "阳台"
+        },
+        {
+          "subject": "倾斜的太阳能热水器",
+          "predicate": "blocking",
+          "object": "阳台通道"
+        },
+        {
+          "subject": "居民楼",
+          "predicate": "in_status_of",
+          "object": "损坏"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "屋顶大面积坍塌并压覆阳台",
+          "consequence": "存在二次坍塌及坠物风险，影响住户逃生通道",
+          "action": "立即疏散楼上住户，设置警戒区，安排结构安全评估"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的房屋",
+          "受损的汽车",
+          "散落的砖块和钢筋"
+        ],
+        "general": [
+          "道路",
+          "屋顶瓦片",
+          "植被"
+        ]
+      },
+      "scenes": [
+        "建筑废墟",
+        "城市街区"
+      ],
+      "events": [
+        "房屋坍塌",
+        "汽车被埋压"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大表哥航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "坍塌的房屋",
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "坍塌的房屋",
+          "status": "坍塌",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "受损的汽车",
+          "status": "损坏",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "道路",
+          "status": "区域被阻断的可用",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "受损的汽车",
+          "predicate": "under",
+          "object": "坍塌的房屋"
+        },
+        {
+          "subject": "坍塌的房屋",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "散落的砖块和钢筋",
+          "predicate": "part_of",
+          "object": "坍塌的房屋"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "房屋倒塌并压毁车辆",
+          "consequence": "可能造成人员被困，交通中断",
+          "action": "立即开展搜救，清理道路障碍"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的房屋",
+          "建筑废墟",
+          "断裂的墙体",
+          "散落的砖块",
+          "变形的金属构件"
+        ],
+        "general": [
+          "空调外机",
+          "窗户",
+          "树木",
+          "泥土坡面"
+        ]
+      },
+      "scenes": [
+        "建筑废墟",
+        "山体体滑坡现场",
+        "城市边缘街区"
+      ],
+      "events": [
+        "房屋坍塌",
+        "墙体断裂",
+        "杂物散落"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大表哥航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "泥土坡面",
+          "城市边缘"
+        ],
+        "location": [
+          "街区",
+          "白云山体体滑坡区域"
+        ],
+        "infrastructure": [
+          "坍塌的房屋",
+          "断裂的墙体",
+          "空调外机"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "affected_entity": [
+          "坍塌的房屋",
+          "散落的砖块",
+          "变形的金属构件"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "坍塌的房屋",
+          "status": "坍塌",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "断裂的墙体",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "泥土坡面",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌的房屋",
+          "predicate": "in_status_of",
+          "object": "坍塌"
+        },
+        {
+          "subject": "散落的砖块",
+          "predicate": "part_of",
+          "object": "建筑废墟"
+        },
+        {
+          "subject": "断裂的墙体",
+          "predicate": "blocking",
+          "object": "街区底层空间"
+        },
+        {
+          "subject": "泥土坡面",
+          "predicate": "near",
+          "object": "坍塌的房屋"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "房屋坍塌"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "房屋因山体滑坡导致整体倾斜并部分坍塌",
+          "consequence": "结构稳定性丧失，存在二次坍塌风险",
+          "action": "立即封锁现场，禁止人员靠近，启动地质灾害评估与排险作业"
+        }
+      ]
+    }
+  }
+]

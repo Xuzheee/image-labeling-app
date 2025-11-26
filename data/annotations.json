@@ -1,5 +1,0 @@
-[
-  {"image": "cat.jpg", "annotation": ["cat"]},
-  {"image": "dog.jpg", "annotation": ["dog", "pet", "animal"]},
-  {"image": "tree.png", "annotation": ["tree", "nature"]}
-]

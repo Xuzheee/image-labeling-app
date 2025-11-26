@@ -1,0 +1,212 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535012915260378410\\image\\7535012915260378410_image_1.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌土石",
+          "被阻断的的道路",
+          "倒伏的树木"
+        ],
+        "general": [
+          "道路",
+          "山体坡",
+          "植被",
+          "护栏",
+          "行人",
+          "雨伞"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场",
+        "山体区道路"
+      ],
+      "events": [
+        "山体体滑坡阻断交通",
+        "人员现场查看"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "经度: 114.255098",
+        "纬度: 24.227651",
+        "坐标系: WGS84坐标系",
+        "地址: 广东省韶关市新丰县马齐田",
+        "时间: 2025-08-05 14:39:53",
+        "海拔: 564.9米",
+        "天气: 26~30°C 东风",
+        "备注: 长按水印编辑备注"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "护栏"
+        ],
+        "personnel": [
+          "行人"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体坡",
+          "植被"
+        ],
+        "response_equipment": [],
+        "location": [
+          "广东省韶关市新丰县马齐田"
+        ],
+        "activity": [
+          "现场查看"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "护栏",
+          "status": "损坏",
+          "operational_status": "完全中断"
+        },
+        {
+          "concept": "山体坡",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌土石",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "倒伏的树木",
+          "predicate": "on",
+          "object": "山体坡"
+        },
+        {
+          "subject": "行人",
+          "predicate": "involves",
+          "object": "现场查看"
+        },
+        {
+          "subject": "道路",
+          "predicate": "part_of",
+          "object": "广东省韶关市新丰县马齐田"
+        },
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "道路损坏"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致道路被大量土石和倒伏树木阻断",
+          "consequence": "车辆无法通行，交通完全中断",
+          "action": "立即封锁现场，组织清理塌方，评估边坡稳定性，启用备用路线或临时便道"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535012915260378410\\image\\7535012915260378410_image_3.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌土石",
+          "倾倒的树木",
+          "泥泞地面"
+        ],
+        "general": [
+          "道路",
+          "植被",
+          "山体坡"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场",
+        "泥石流堆积区"
+      ],
+      "events": [
+        "山体体滑坡发生后场景",
+        "道路被阻断的"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体坡",
+          "植被"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "山体坡",
+          "status": "损坏",
+          "risk_level": "高",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌土石",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "倾倒的树木",
+          "predicate": "on",
+          "object": "坍塌土石"
+        },
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "道路损坏"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被塌方土石和倾倒树木完全阻断",
+          "consequence": "车辆无法通行，交通中断",
+          "action": "立即清理障碍物或启用备用路线"
+        }
+      ]
+    }
+  }
+]

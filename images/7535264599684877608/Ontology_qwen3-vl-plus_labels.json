@@ -1,0 +1,332 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535264599684877608\\video\\7535264599684877608_video_semantic_frame_000009.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "被淹的的摩托车",
+          "滑坡山体体"
+        ],
+        "general": [
+          "道路",
+          "树木",
+          "护栏",
+          "雨衣",
+          "头盔"
+        ]
+      },
+      "scenes": [
+        "积水街道",
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "汽车被困水中",
+        "山体体滑坡发生"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡",
+          "积水"
+        ],
+        "environment": [
+          "山体体",
+          "植被区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "山体体",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "被淹的的摩托车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "滑坡山体体",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被洪水淹没且山体滑坡",
+          "consequence": "交通中断，存在二次滑坡风险",
+          "action": "封锁路段，疏散周边人员，监测山体稳定性"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535264599684877608\\video\\7535264599684877608_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的电线杆",
+          "浑浊积水"
+        ],
+        "general": [
+          "树木",
+          "电线",
+          "河岸植被"
+        ]
+      },
+      "scenes": [
+        "积水现场",
+        "河流泛滥区"
+      ],
+      "events": [
+        "积水积水道路与设施"
+      ],
+      "time": [
+        "不确定"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "不确定"
+        ],
+        "infrastructure": [
+          "电线杆",
+          "电线"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流",
+          "河岸",
+          "植被区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "电线杆",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "积水",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "电线杆",
+          "predicate": "in",
+          "object": "积水"
+        },
+        {
+          "subject": "积水",
+          "predicate": "affects",
+          "object": "电线杆"
+        },
+        {
+          "subject": "电线杆",
+          "predicate": "part_of",
+          "object": "电力设施"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "电线杆被洪水淹没",
+          "consequence": "存在触电及电力中断风险",
+          "action": "立即切断该区域电源，设置安全警戒并通知电力部门抢修"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535264599684877608\\video\\7535264599684877608_video_semantic_frame_000013.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "汽车",
+          "电动车",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "湿滑道路",
+        "夜间行车"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "树木"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "电动车",
+          "predicate": "on",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "路面湿滑反光",
+          "consequence": "存在打滑或追尾风险",
+          "action": "减速慢行，保持车距，开启近光灯"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535264599684877608\\video\\7535264599684877608_video_semantic_frame_000020.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被阻断的的道路",
+          "散落的泥石与树枝"
+        ],
+        "general": [
+          "道路",
+          "树木",
+          "车灯"
+        ]
+      },
+      "scenes": [
+        "夜间山体体滑坡现场",
+        "被阻断的山体路"
+      ],
+      "events": [
+        "道路被滑坡物阻断"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "山体区道路",
+          "植被区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "交通中断"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "区域被阻断的可用",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "散落的泥石与树枝",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "散落的泥石与树枝",
+          "predicate": "in",
+          "object": "山体区道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被滑坡物阻断",
+          "consequence": "通行中断，可能影响救援或疏散",
+          "action": "启动应急清障，设置绕行提示，夜间加强照明与警示"
+        }
+      ]
+    }
+  }
+]

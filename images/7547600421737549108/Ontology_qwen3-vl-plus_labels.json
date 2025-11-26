@@ -1,0 +1,289 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600421737549108\\video\\7547600421737549108_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水道路",
+          "倒伏的树木"
+        ],
+        "general": [
+          "路灯",
+          "草地",
+          "建筑物",
+          "人行横道"
+        ]
+      },
+      "scenes": [
+        "积水街道",
+        "城市街区"
+      ],
+      "events": [
+        "道路被淹的",
+        "树木倒伏"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "路灯",
+          "人行横道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "城市街区",
+          "草地"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市街道",
+          "建筑物旁"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "树木",
+          "status": "倒伏",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水道路"
+        },
+        {
+          "subject": "倒伏的树木",
+          "predicate": "near",
+          "object": "道路"
+        },
+        {
+          "subject": "积水道路",
+          "predicate": "affects",
+          "object": "交通通行"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路大面积积水并伴有倒伏树木",
+          "consequence": "交通中断，存在次生安全隐患",
+          "action": "封闭路段，组织排水与清障作业"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600421737549108\\video\\7547600421737549108_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的街道",
+          "积水",
+          "雨衣行人"
+        ],
+        "general": [
+          "建筑物",
+          "电线杆",
+          "台阶",
+          "扫帚"
+        ]
+      },
+      "scenes": [
+        "积水街道",
+        "城市街区"
+      ],
+      "events": [
+        "人员涉水行走",
+        "街道积水"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "街道",
+          "建筑物",
+          "电线杆"
+        ],
+        "personnel": [
+          "行人"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "涉水行走"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "街道",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "行人",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "行人",
+          "predicate": "in",
+          "object": "被淹的的街道"
+        },
+        {
+          "subject": "积水",
+          "predicate": "in",
+          "object": "街道"
+        },
+        {
+          "subject": "行人",
+          "predicate": "is_used_for",
+          "object": "涉水行走"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "街道严重积水",
+          "consequence": "交通中断，行人通行困难",
+          "action": "设置临时警示标志，引导绕行，启动排水预案"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600421737549108\\video\\7547600421737549108_video_semantic_frame_000016.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "螃蟹",
+          "积水地面",
+          "落叶"
+        ]
+      },
+      "scenes": [
+        "积水地面"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "积水地面"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "地面",
+          "status": "积水",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "螃蟹",
+          "predicate": "on",
+          "object": "积水地面"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面有积水",
+          "consequence": "可能影响行人通行",
+          "action": "建议排水或设置警示标识"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600421737549108\\video\\7547600421737549108_video_semantic_frame_000021.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "泡沫箱",
+          "螃蟹"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "不确定"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "不确定"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

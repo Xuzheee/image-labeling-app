@@ -1,0 +1,133 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "infrastructure": [
+          "被淹的的道路"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "被淹的的道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的道路",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "被淹的的道路",
+          "predicate": "is_affected_by",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被洪水淹没",
+          "consequence": "交通中断",
+          "action": "启用备用路线，疏散受困车辆"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000028.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "水流中的杂物（砖块、石块）"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "积水现场"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "积水区域"
+        ],
+        "infrastructure": [
+          "被淹的的道路"
+        ],
+        "affected_entity": [
+          "水流中的杂物（砖块、石块）"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "被淹的的道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "水流中的杂物（砖块、石块）",
+          "predicate": "in",
+          "object": "被淹的的道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被洪水淹没",
+          "consequence": "交通中断",
+          "action": "设置警示标志并引导行人绕行"
+        }
+      ]
+    }
+  }
+]

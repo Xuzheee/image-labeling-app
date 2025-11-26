@@ -1,0 +1,453 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535688899944562722\\7535688899944562722_video_1_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "救援汽车"
+        ],
+        "general": [
+          "建筑物",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [
+        "救援汽车出动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云因连日暴雨导致山体滑坡",
+        "由于连日大雨造成山体滑坡"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "城市街区"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [],
+        "response_equipment": [
+          "救援汽车"
+        ],
+        "location": [],
+        "activity": [
+          "救援车辆出动"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "城市街区",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "救援汽车",
+          "predicate": "in",
+          "object": "城市街区"
+        },
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "救援汽车出动"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡",
+          "consequence": "可能导致交通中断",
+          "action": "加强交通管制，确保救援通道畅通"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535688899944562722\\7535688899944562722_video_1_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "救援汽车",
+          "滑坡现场"
+        ],
+        "general": [
+          "建筑物",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "救援行动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云因连日暴雨导致山体滑坡",
+        "导致致大源街"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [],
+        "response_equipment": [
+          "救援汽车"
+        ],
+        "location": [],
+        "activity": [
+          "救援行动"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "滑坡现场",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "救援汽车",
+          "predicate": "in",
+          "object": "滑坡现场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡",
+          "consequence": "道路可能中断",
+          "action": "部署更多救援力量"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535688899944562722\\7535688899944562722_video_1_semantic_frame_000006.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "受损的建筑",
+          "泥石流"
+        ],
+        "general": [
+          "树木",
+          "道路"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "救援行动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云因连日暴雨导致山体滑坡",
+        "多人被困"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "受损的建筑",
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "树木"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "救援行动"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "受损的建筑",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "泥石流",
+          "predicate": "causes",
+          "object": "受损的建筑"
+        },
+        {
+          "subject": "救援行动",
+          "predicate": "involves",
+          "object": "多人被困"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡",
+          "consequence": "建筑损毁",
+          "action": "进行紧急救援"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535688899944562722\\7535688899944562722_video_1_semantic_frame_000009.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡",
+          "被淹的的道路"
+        ],
+        "general": [
+          "建筑物",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "滑坡现场"
+      ],
+      "events": [
+        "救援行动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云因连日暴雨导致山体滑坡",
+        "截至8月6号晚上22点30分已救出9人"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "被淹的的道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "救援行动"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "山体体滑坡",
+          "status": "损坏",
+          "risk_level": "高"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "被淹的的道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡",
+          "consequence": "交通中断",
+          "action": "进行紧急救援和疏散"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535688899944562722\\7535688899944562722_video_1_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "山体体滑坡"
+        ],
+        "general": [
+          "建筑物",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "滑坡现场"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云因连日暴雨导致山体滑坡",
+        "其中2人死亡"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "被淹的的道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "被淹的的道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡",
+          "consequence": "交通中断",
+          "action": "疏散附近居民，清理滑坡"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535688899944562722\\7535688899944562722_video_1_semantic_frame_000015.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "救援汽车"
+        ],
+        "general": [
+          "建筑物",
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [
+        "救援汽车出动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云因连日暴雨导致山体滑坡",
+        "平安健康"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [
+          "救援汽车"
+        ],
+        "location": [],
+        "activity": [
+          "救援"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "救援汽车",
+          "predicate": "in",
+          "object": "城市街区"
+        },
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "救援汽车出动"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡",
+          "consequence": "可能导致交通中断",
+          "action": "加强交通疏导，确保救援通道畅通"
+        }
+      ]
+    }
+  }
+]

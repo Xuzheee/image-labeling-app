@@ -1,0 +1,97 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535293678638599460\\video\\7535293678638599460_video_semantic_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "篮球场积水"
+        ],
+        "general": [
+          "汽车",
+          "树木",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "积水街道",
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "河流",
+          "低洼区"
+        ],
+        "location": [
+          "学校操场",
+          "城市街道"
+        ],
+        "infrastructure": [
+          "道路",
+          "篮球场",
+          "建筑"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "affected_entity": [
+          "被淹的的道路",
+          "积水的篮球场"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "篮球场",
+          "damage_status": "积水",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的道路",
+          "predicate": "near",
+          "object": "篮球场"
+        },
+        {
+          "subject": "积水的篮球场",
+          "predicate": "part_of",
+          "object": "学校操场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线，设置绕行标志"
+        },
+        {
+          "condition": "篮球场积水",
+          "consequence": "影响体育活动",
+          "action": "暂停场地使用，进行排水处理"
+        }
+      ]
+    }
+  }
+]

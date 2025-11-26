@@ -1,0 +1,151 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534924739828092202\\image\\7534924739828092202_image_3.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的草地",
+          "被淹的的树木",
+          "积水区域"
+        ],
+        "general": [
+          "街区"
+        ]
+      },
+      "scenes": [
+        "积水泛滥的城市边缘区域"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "由于这里不停地暴雨，暴雨，暴雨，就成这样了。而且还在继续😂"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "城市边缘区域"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": [],
+        "affected_entity": [
+          "被淹的的草地",
+          "被淹的的树木"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "被淹的的草地",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "被淹的的树木",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的草地",
+          "predicate": "in",
+          "object": "积水区域"
+        },
+        {
+          "subject": "被淹的的树木",
+          "predicate": "in",
+          "object": "积水区域"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水泛滥，淹没大片区域",
+          "consequence": "可能导致周边基础设施受损，居民出行困难",
+          "action": "加强洪水监测，提醒居民远离危险区域，准备应急救援物资"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534924739828092202\\image\\7534924739828092202_image_6.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的树木",
+          "积水区域"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "积水场景"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "由于这里不停地暴雨，暴雨，暴雨，就成这样了。而且还在继续😂"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流",
+          "草地"
+        ],
+        "affected_entity": [
+          "被淹的的树木"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "积水区域",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的树木",
+          "predicate": "in",
+          "object": "积水区域"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水淹没植被",
+          "consequence": "周边区域面临进一步淹没风险",
+          "action": "加强水位监测，提醒居民远离河道"
+        }
+      ]
+    }
+  }
+]

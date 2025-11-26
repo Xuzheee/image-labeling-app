@@ -1,0 +1,62 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534795736425794858\\video\\7534795736425794858_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "建筑物",
+          "道路"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "今晚的深圳是怎么了？"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [],
+        "environment": [
+          "城市"
+        ],
+        "location": [
+          "深圳"
+        ],
+        "infrastructure": [
+          "建筑物",
+          "道路"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "affected_entity": []
+      },
+      "attributes": [
+        {
+          "concept": "天气",
+          "status": "黑暗",
+          "risk_level": "不确定",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "城市夜景",
+          "consequence": "可能存在暴雨或雷暴天气",
+          "action": "关注天气预报，做好防范措施"
+        }
+      ]
+    }
+  }
+]

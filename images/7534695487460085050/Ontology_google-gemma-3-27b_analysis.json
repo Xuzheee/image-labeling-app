@@ -1,0 +1,418 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水街道"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车"
+        ],
+        "general": [
+          "道路"
+        ]
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "text": "得到力帆城运",
+          "semantic": "车辆所属公司或标识"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "道路",
+          "predicate": "in_status_of",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000013.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水街道",
+          "被淹的的道路"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全",
+          "semantic": "描述了肇庆段高速公路因特大暴雨导致山体滑坡，道路被淹，交通中断的信息。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "积水街道",
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡",
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "肇庆段道路道路"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "道路",
+          "predicate": "in_status_of",
+          "object": "积水街道"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹，交通中断",
+          "consequence": "车辆无法通行",
+          "action": "启用备用路线或等待水退"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000019.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水街道"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全",
+          "semantic": "描述了肇庆段高速公路因特大暴雨导致山体滑坡，道路被淹，交通中断的信息。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡",
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "肇庆段道路道路"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        },
+        {
+          "condition": "山体滑坡",
+          "consequence": "道路阻塞，潜在安全风险",
+          "action": "进行地质灾害评估与清理"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000021.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "content": "广佛肇 肇庆段 由于特大暴雨山体滑坡 高速变河道 通行中断 请各位司机绕行！#雨天行车注意安全",
+          "semantic": "描述了肇庆段高速公路因特大暴雨导致山体滑坡，道路被淹，交通中断的情况。"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡",
+          "积水"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "肇庆段道路道路"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "道路",
+          "predicate": "in_status_of",
+          "object": "积水"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹，交通中断",
+          "consequence": "车辆无法通行",
+          "action": "启用绕行路线，发布交通警示信息"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534695487460085050\\video\\7534695487460085050_video_semantic_frame_000026.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的汽车",
+          "积水街道"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "积水街道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的汽车",
+          "predicate": "in",
+          "object": "积水街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹",
+          "consequence": "交通中断",
+          "action": "启用备用路线"
+        }
+      ]
+    }
+  }
+]

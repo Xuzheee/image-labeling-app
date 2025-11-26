@@ -1,0 +1,485 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡",
+          "受损建筑",
+          "救援挖掘机"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "救援作业"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云加油 向所有救灾人员致敬"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体地"
+        ],
+        "infrastructure": [
+          "受损建筑"
+        ],
+        "response_equipment": [
+          "救援挖掘机"
+        ],
+        "location": [
+          "广州白云"
+        ],
+        "activity": [
+          "救援作业"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "受损建筑",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        },
+        {
+          "concept": "山体体滑坡",
+          "status": "发生",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "受损建筑",
+          "predicate": "in",
+          "object": "山体体滑坡现场"
+        },
+        {
+          "subject": "救援挖掘机",
+          "predicate": "is_used_for",
+          "object": "救援作业"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致建筑受损",
+          "consequence": "居民安全受威胁",
+          "action": "紧急转移受灾群众并开展搜救"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000001.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的房屋",
+          "受损建筑",
+          "挖掘机"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "山体体滑坡后的建筑废墟"
+      ],
+      "events": [
+        "清理废墟"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州白云 8月7日上午拍",
+        "大天易航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "infrastructure": [
+          "坍塌的房屋",
+          "受损建筑"
+        ],
+        "response_equipment": [
+          "挖掘机"
+        ],
+        "location": [
+          "广州白云"
+        ],
+        "activity": [
+          "清理废墟"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "坍塌的房屋",
+          "status": "坍塌",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "受损建筑",
+          "status": "损坏",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "挖掘机",
+          "predicate": "is_used_for",
+          "object": "清理废墟"
+        },
+        {
+          "subject": "坍塌的房屋",
+          "predicate": "near",
+          "object": "挖掘机"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "建筑因滑坡倒塌",
+          "consequence": "可能存在人员被困风险",
+          "action": "继续开展搜救工作，评估周边建筑稳定性"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000002.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "挖掘机",
+          "工程汽车",
+          "救援人员",
+          "蓝色帐篷"
+        ],
+        "general": [
+          "停车场",
+          "建筑物"
+        ]
+      },
+      "scenes": [
+        "灾害救援现场"
+      ],
+      "events": [
+        "救援作业",
+        "人员集结"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大家哥航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [
+          "城市区域"
+        ],
+        "infrastructure": [
+          "停车场",
+          "道路"
+        ],
+        "personnel": [
+          "救援人员"
+        ],
+        "response_equipment": [
+          "挖掘机",
+          "工程汽车",
+          "蓝色帐篷"
+        ],
+        "location": [],
+        "activity": [
+          "救援作业"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "泥泞"
+        },
+        {
+          "concept": "挖掘机",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "挖掘机",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "救援人员",
+          "predicate": "near",
+          "object": "蓝色帐篷"
+        },
+        {
+          "subject": "工程汽车",
+          "predicate": "in",
+          "object": "停车场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "现场部署多台挖掘机和工程车辆，救援人员集结",
+          "consequence": "正在开展滑坡灾害应急救援",
+          "action": "加强现场秩序管理，确保救援安全"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的屋顶",
+          "滑坡山坡"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "建筑废墟"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大象哥航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "infrastructure": [
+          "受损屋顶"
+        ],
+        "environment": [
+          "滑坡山坡"
+        ],
+        "location": [
+          "居民区"
+        ],
+        "affected_entity": [
+          "坍塌的屋顶"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "受损屋顶",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "清晰"
+        },
+        {
+          "concept": "滑坡山坡",
+          "status": "不适用",
+          "risk_level": "高",
+          "visibility": "清晰",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "滑坡山坡",
+          "predicate": "causes",
+          "object": "坍塌的屋顶"
+        },
+        {
+          "subject": "坍塌的屋顶",
+          "predicate": "is_part_of",
+          "object": "居民区"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "建筑屋顶严重损坏，背景出现大量松散土坡",
+          "consequence": "可能存在二次滑坡风险，威胁周边建筑安全",
+          "action": "划定危险区域，禁止靠近，安排专业检测评估"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被受损的汽车",
+          "建筑废墟"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大家航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [],
+        "location": [],
+        "infrastructure": [],
+        "personnel": [],
+        "response_equipment": [],
+        "affected_entity": [
+          "被受损的汽车",
+          "建筑废墟"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "被受损的汽车",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "建筑废墟",
+          "status": "坍塌",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被受损的汽车",
+          "predicate": "in",
+          "object": "建筑废墟区域"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致建筑坍塌及车辆损毁",
+          "consequence": "存在次生灾害风险（如进一步滑坡、坠物）",
+          "action": "设置警戒线，评估地质稳定性后开展救援与清理工作"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535796010367978787\\video\\7535796010367978787_video_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "坍塌的房屋",
+          "建筑废墟"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "大航哥航拍"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "滑坡"
+        ],
+        "infrastructure": [
+          "坍塌的房屋"
+        ],
+        "affected_entity": [
+          "建筑废墟"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "坍塌的房屋",
+          "status": "坍塌",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "坍塌的房屋",
+          "predicate": "in",
+          "object": "山体体滑坡现场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "建筑因山体滑坡发生倒塌",
+          "consequence": "周边区域存在次生灾害风险",
+          "action": "划定危险区域，禁止无关人员靠近"
+        }
+      ]
+    }
+  }
+]

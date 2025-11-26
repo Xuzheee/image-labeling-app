@@ -1,0 +1,58 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2dqxfz4snw9hs\\video\\3x2dqxfz4snw9hs_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "河流",
+          "建筑",
+          "桥梁"
+        ]
+      },
+      "scenes": [
+        "城市河流"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "桥梁"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "河流"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "河流",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "桥梁",
+          "predicate": "over",
+          "object": "河流"
+        }
+      ],
+      "inferences": []
+    }
+  }
+]

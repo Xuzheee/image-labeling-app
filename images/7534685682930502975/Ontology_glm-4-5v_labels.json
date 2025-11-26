@@ -1,0 +1,81 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534685682930502975\\image\\7534685682930502975_image_1.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "湿地面"
+        ],
+        "general": [
+          "雨伞",
+          "行人",
+          "树木",
+          "自行车"
+        ]
+      },
+      "scenes": [
+        "雨天城市街道"
+      ],
+      "events": [
+        "行人行走"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "湿地面"
+        ],
+        "personnel": [
+          "行人"
+        ],
+        "hazard": [],
+        "environment": [
+          "树木",
+          "城市街道"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市街道"
+        ],
+        "activity": [
+          "行人行走"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "湿地面",
+          "status": "湿润",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "行人",
+          "predicate": "on",
+          "object": "湿地面"
+        },
+        {
+          "subject": "雨伞",
+          "predicate": "has_function",
+          "object": "防雨"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "雨天导致路面湿滑",
+          "consequence": "行人行走存在滑倒风险",
+          "action": "小心慢行，注意脚下"
+        }
+      ]
+    }
+  }
+]

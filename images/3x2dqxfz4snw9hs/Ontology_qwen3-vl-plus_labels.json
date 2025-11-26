@@ -1,0 +1,102 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2dqxfz4snw9hs\\video\\3x2dqxfz4snw9hs_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "浑浊的河流",
+          "河岸护栏"
+        ],
+        "general": [
+          "居民楼",
+          "树木",
+          "路灯",
+          "道路",
+          "行人",
+          "电动车"
+        ]
+      },
+      "scenes": [
+        "积水河流",
+        "城市河岸"
+      ],
+      "events": [
+        "河流上涨",
+        "行人通行"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "河岸护栏",
+          "道路",
+          "路灯"
+        ],
+        "personnel": [
+          "行人"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流",
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市河岸"
+        ],
+        "activity": [
+          "通行"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "河流",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "河岸护栏",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "河流",
+          "predicate": "near",
+          "object": "河岸护栏"
+        },
+        {
+          "subject": "行人",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "河流",
+          "predicate": "in_status_of",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "河水浑浊且水位接近河岸",
+          "consequence": "存在漫堤风险，可能影响沿岸交通与建筑安全",
+          "action": "加强水位监测，提醒沿岸居民注意安全，准备沙袋等防洪物资"
+        }
+      ]
+    }
+  }
+]

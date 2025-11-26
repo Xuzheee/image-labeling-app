@@ -1,0 +1,253 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡",
+          "泥石流"
+        ],
+        "general": [
+          "道路",
+          "树木",
+          "河流"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场",
+        "暴雨天气"
+      ],
+      "events": [
+        "山体体滑坡",
+        "道路封锁"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广东肇庆高速收费站附近因暴雨山体滑坡封路"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "山体体滑坡",
+          "泥石流"
+        ],
+        "environment": [
+          "河流",
+          "树木"
+        ],
+        "location": [
+          "广东肇庆道路收费站附近"
+        ],
+        "infrastructure": [
+          "道路",
+          "道路收费站"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "affected_entity": [
+          "被封锁的道路"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "道路封锁"
+        },
+        {
+          "subject": "道路收费站",
+          "predicate": "near",
+          "object": "山体体滑坡现场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致道路封锁",
+          "consequence": "交通中断",
+          "action": "启用备用路线，派遣救援人员清理道路"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "山体体滑坡"
+        ],
+        "general": [
+          "汽车",
+          "路灯"
+        ]
+      },
+      "scenes": [
+        "暴雨灾害下的道路道路场景"
+      ],
+      "events": [
+        "道路封锁"
+      ],
+      "time": [
+        "晚上"
+      ],
+      "text-overlay": [
+        "广东肇庆高速收费站附近因暴雨山体滑坡封路"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "晚上"
+        ],
+        "hazard": [
+          "山体体滑坡",
+          "暴雨"
+        ],
+        "environment": [
+          "道路道路",
+          "山体区"
+        ],
+        "location": [
+          "广东肇庆道路收费站附近"
+        ],
+        "infrastructure": [
+          "道路",
+          "道路收费站"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "affected_entity": [
+          "被淹的的道路",
+          "封锁的交通路线"
+        ],
+        "activity": [
+          "封路"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "道路封锁"
+        },
+        {
+          "subject": "暴雨",
+          "predicate": "causes",
+          "object": "山体体滑坡"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "高速收费站附近发生山体滑坡",
+          "consequence": "交通中断",
+          "action": "启用备用路线，疏散车辆"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡",
+          "封路"
+        ],
+        "general": [
+          "道路",
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "道路道路收费站附近"
+      ],
+      "events": [
+        "山体体滑坡封路"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广东肇庆高速收费站附近因暴雨山体滑坡封路"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "道路道路收费站附近"
+        ],
+        "location": [
+          "广东肇庆"
+        ],
+        "infrastructure": [
+          "道路",
+          "道路道路收费站"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": [
+          "封路"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "near",
+          "object": "道路道路收费站"
+        },
+        {
+          "subject": "道路",
+          "predicate": "involves",
+          "object": "封路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡封路",
+          "consequence": "交通中断",
+          "action": "启用备用路线，疏散车辆"
+        }
+      ]
+    }
+  }
+]

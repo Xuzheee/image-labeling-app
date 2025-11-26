@@ -1,0 +1,57 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011925462289722\\video\\7547011925462289722_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "路灯",
+          "建筑物",
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "防守“塔巴”台风工 作提示 为做好2025年第16号“塔巴”台风防 卫,保障安全,现 提示各机构老板 注意 !"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "路灯",
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街道"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "不确定"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "不确定"
+        ],
+        "hazard": [],
+        "environment": [],
+        "location": [],
+        "infrastructure": [],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "临时安置点的床铺",
+          "受灾群众"
+        ],
+        "general": [
+          "室内环境"
+        ]
+      },
+      "scenes": [
+        "临时安置场地"
+      ],
+      "events": [
+        "受灾群众休息"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [],
+        "environment": [
+          "室内环境"
+        ],
+        "infrastructure": [
+          "临时安置点的床铺",
+          "室内空间"
+        ],
+        "personnel": [
+          "受灾群众"
+        ],
+        "activity": [
+          "受灾群众休息"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "临时安置点的床铺",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "受灾群众",
+          "status": "安置中",
+          "risk_level": "低",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "受灾群众",
+          "predicate": "in",
+          "object": "临时安置场地"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "临时安置场所内有大量受灾群众休息",
+          "consequence": "需持续提供物资与医疗保障",
+          "action": "加强物资补给和医疗巡诊"
+        }
+      ]
+    }
+  }
+]

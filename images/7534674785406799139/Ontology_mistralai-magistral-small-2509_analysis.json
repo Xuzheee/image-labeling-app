@@ -1,0 +1,230 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水道路",
+          "救援人员"
+        ],
+        "general": [
+          "建筑物",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [
+        "救援行动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水道路",
+          "建筑物"
+        ],
+        "personnel": [
+          "救援人员"
+        ],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "救援行动"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "救援人员",
+          "predicate": "involves",
+          "object": "救援行动"
+        },
+        {
+          "subject": "救援人员",
+          "predicate": "on",
+          "object": "积水道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路积水严重",
+          "consequence": "交通受阻，存在安全风险",
+          "action": "疏散人员，提供救援设备和物资"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000009.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水的巷道",
+          "被淹的的摩托车"
+        ],
+        "general": [
+          "建筑物",
+          "楼梯",
+          "自行车"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "积水巷道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑物",
+          "楼梯"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [
+          "积水巷道"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "巷道",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的摩托车",
+          "predicate": "in",
+          "object": "积水巷道"
+        },
+        {
+          "subject": "楼梯",
+          "predicate": "part_of",
+          "object": "建筑物"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "巷道积水严重",
+          "consequence": "存在行走风险和交通中断",
+          "action": "疏散居民，提供救援设备"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水的巷道",
+          "被淹的的摩托车"
+        ],
+        "general": [
+          "建筑物",
+          "自行车",
+          "电线杆"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "积水巷道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑物",
+          "巷道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "巷道",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的摩托车",
+          "predicate": "in",
+          "object": "积水的巷道"
+        },
+        {
+          "subject": "建筑物",
+          "predicate": "near",
+          "object": "积水的巷道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "巷道积水",
+          "consequence": "交通受限，可能影响行人和车辆通行",
+          "action": "清理积水，设置警示标志"
+        }
+      ]
+    }
+  }
+]

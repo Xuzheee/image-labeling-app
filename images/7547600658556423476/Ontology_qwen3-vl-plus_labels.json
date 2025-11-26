@@ -1,0 +1,339 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "卡车车厢",
+          "塑料袋",
+          "金属墙板",
+          "护栏",
+          "店铺招牌"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "冯记牛肉 火锅"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "绿色防水布",
+          "黄色手动液压卡车"
+        ],
+        "general": [
+          "蓝色卡车车厢",
+          "建筑物",
+          "旗帜",
+          "道路"
+        ]
+      },
+      "scenes": [
+        "城市街道",
+        "物资装载现场"
+      ],
+      "events": [
+        "物资装载"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [
+          "绿色防水布",
+          "黄色手动液压卡车"
+        ],
+        "location": [
+          "城市街道"
+        ],
+        "activity": [
+          "物资装载"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "绿色防水布",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "黄色手动液压卡车",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "绿色防水布",
+          "predicate": "on",
+          "object": "黄色手动液压卡车"
+        },
+        {
+          "subject": "黄色手动液压卡车",
+          "predicate": "in",
+          "object": "蓝色卡车车厢"
+        },
+        {
+          "subject": "绿色防水布",
+          "predicate": "is_used_for",
+          "object": "物资装载"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "防水布与搬运设备在卡车上",
+          "consequence": "可能用于应急物资运输或临时遮蔽",
+          "action": "确认物资类型并协调分发至需求点"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000006.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "砖石地面",
+          "工具",
+          "手推车部件",
+          "手套",
+          "拖鞋"
+        ]
+      },
+      "scenes": [
+        "湿滑的砖石地面"
+      ],
+      "events": [
+        "人员维修手推车"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [
+          "维修人员"
+        ],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "设备维修"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "砖石地面",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "维修人员",
+          "predicate": "involves",
+          "object": "设备维修"
+        },
+        {
+          "subject": "手推车部件",
+          "predicate": "on",
+          "object": "砖石地面"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面有积水",
+          "consequence": "可能影响维修作业安全",
+          "action": "建议穿戴防水装备，清理积水区域"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "红色手动液压车",
+          "蓝色卡车",
+          "地面"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "电话 529517"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被水浸泡的托盘车",
+          "积水地面"
+        ],
+        "general": [
+          "人员腿部",
+          "工作台",
+          "瓶状物"
+        ]
+      },
+      "scenes": [
+        "积水仓库",
+        "工业作业区"
+      ],
+      "events": [
+        "设备浸水",
+        "人员在场"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "托盘车",
+          "地面"
+        ],
+        "personnel": [
+          "人员"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "仓库"
+        ],
+        "response_equipment": [],
+        "location": [
+          "仓库内部"
+        ],
+        "activity": [
+          "设备浸水"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "托盘车",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "地面",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "托盘车",
+          "predicate": "in",
+          "object": "积水地面"
+        },
+        {
+          "subject": "人员",
+          "predicate": "near",
+          "object": "托盘车"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "托盘车被水浸泡",
+          "consequence": "设备可能短路或锈蚀，影响后续使用",
+          "action": "立即断电并移出积水区域，进行干燥与检修"
+        }
+      ]
+    }
+  }
+]

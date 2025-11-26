@@ -1,0 +1,101 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534944682012577082\\video\\7534944682012577082_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡",
+          "警示牌",
+          "被阻断的的道路"
+        ],
+        "general": [
+          "汽车",
+          "树木",
+          "电线杆",
+          "道路"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场",
+        "雨天道路"
+      ],
+      "events": [
+        "山体体滑坡发生",
+        "汽车停滞"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体坡",
+          "植被区"
+        ],
+        "location": [
+          "道路旁山体坡"
+        ],
+        "infrastructure": [
+          "道路",
+          "电线杆"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "affected_entity": [
+          "被阻断的的道路",
+          "停滞的汽车"
+        ],
+        "activity": [
+          "交通中断"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "区域被阻断的可用",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "有障碍物"
+        },
+        {
+          "concept": "山体体滑坡",
+          "damage_status": "损坏",
+          "risk_level": "高",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "blocking",
+          "object": "道路"
+        },
+        {
+          "subject": "停滞的汽车",
+          "predicate": "in",
+          "object": "被阻断的的道路"
+        },
+        {
+          "subject": "警示牌",
+          "predicate": "near",
+          "object": "山体体滑坡"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡阻断道路",
+          "consequence": "交通中断，车辆滞留",
+          "action": "设置绕行提示，启动应急清障"
+        }
+      ]
+    }
+  }
+]

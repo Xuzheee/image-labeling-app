@@ -1,0 +1,134 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "湿滑道路"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "城市街道（雨天）"
+      ],
+      "events": [
+        "雨水"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "国际酒店",
+        "客房"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "雨水"
+        ],
+        "environment": [
+          "城市街道"
+        ],
+        "infrastructure": [
+          "城市街道"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [
+          "国际酒店"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "城市街道",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "湿滑道路",
+          "predicate": "on",
+          "object": "城市街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "城市街道湿滑",
+          "consequence": "车辆行驶易打滑，交通事故风险增加",
+          "action": "减速慢行，开启警示灯"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000014.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "城市街道",
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "暴雨中的城市街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "欧斯卡国际酒店"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "infrastructure": [
+          "城市街道"
+        ],
+        "personnel": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "城市街道",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "城市街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "暴雨天气",
+          "consequence": "道路湿滑，能见度降低",
+          "action": "驾驶员需减速慢行，开启示廓灯"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "金属墙",
+          "蓝色平台",
+          "白色塑料袋"
+        ]
+      },
+      "scenes": [
+        "城市环境"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "金属墙",
+          "蓝色平台"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市环境"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "金属墙",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "蓝色平台",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "白色塑料袋",
+          "predicate": "on",
+          "object": "蓝色平台"
+        },
+        {
+          "subject": "金属墙",
+          "predicate": "part_of",
+          "object": "城市环境"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "白色塑料袋在蓝色平台上",
+          "consequence": "可能影响视觉整洁度",
+          "action": "清理垃圾以保持环境卫生"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "救援汽车",
+          "绿色防水帐篷"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "救援汽车",
+          "绿色防水帐篷"
+        ],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "救援汽车",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000006.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "救援艇"
+        ],
+        "general": [
+          "人腿",
+          "拖鞋",
+          "地面"
+        ]
+      },
+      "scenes": [],
+      "events": [
+        "搬运救援艇"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "救援艇"
+        ],
+        "location": [],
+        "activity": [
+          "搬运"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "地面",
+          "terrain_condition": "湿滑"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "人员",
+          "predicate": "involves",
+          "object": "搬运救援艇"
+        },
+        {
+          "subject": "救援艇",
+          "predicate": "is_used_for",
+          "object": "应急响应"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面湿滑",
+          "consequence": "可能增加搬运难度和安全风险",
+          "action": "确保人员穿着防滑鞋，采取适当的防滑措施"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水的地面"
+        ],
+        "general": [
+          "叉车",
+          "蓝色汽车"
+        ]
+      },
+      "scenes": [
+        "室内或半室内环境"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "积水的地面"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "室内或半室内环境"
+        ],
+        "response_equipment": [
+          "叉车"
+        ],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "地面",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "发电机",
+          "防滑垫"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "response_equipment": [
+          "发电机",
+          "防滑垫"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "infrastructure": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "发电机",
+          "status": "正常",
+          "operational_status": "完全可用"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "防滑垫",
+          "predicate": "under",
+          "object": "发电机"
+        }
+      ],
+      "inferences": []
+    }
+  }
+]

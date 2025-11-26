@@ -1,0 +1,275 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "卡车",
+          "街道",
+          "建筑物",
+          "护栏"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "冯记牛肉"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "卡车",
+          "街道"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "location": [
+          "城市街区"
+        ],
+        "hazard": [],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "蓝色卡车",
+          "绿色防水布"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "蓝色卡车"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [
+        {
+          "subject": "绿色防水布",
+          "predicate": "on",
+          "object": "蓝色卡车"
+        }
+      ],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000006.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "地面",
+          "绿色工具"
+        ]
+      },
+      "scenes": [
+        "户外维修场景"
+      ],
+      "events": [
+        "工具维修"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "地面"
+        ],
+        "personnel": [
+          "人员"
+        ],
+        "hazard": [],
+        "environment": [
+          "地面"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "工具维修"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "地面",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "人员",
+          "predicate": "on",
+          "object": "地面"
+        },
+        {
+          "subject": "工具维修",
+          "predicate": "involves",
+          "object": "人员"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面潮湿",
+          "consequence": "可能导致滑倒",
+          "action": "注意防滑"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "红色手推车",
+          "蓝色卡车",
+          "城市街道"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "电话 5529517"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "城市街道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街道"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [
+        {
+          "subject": "红色手推车",
+          "predicate": "on",
+          "object": "城市街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面湿润",
+          "consequence": "路面湿滑，可能影响通行",
+          "action": "提醒过往行人及车辆注意安全，必要时进行地面干燥处理"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600658556423476\\video\\7547600658556423476_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "潮湿地面",
+          "电动托盘卡车",
+          "橙色手推车"
+        ]
+      },
+      "scenes": [
+        "潮湿的室内/工作区域"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "潮湿地面"
+        ],
+        "environment": [
+          "潮湿环境"
+        ],
+        "hazard": [],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "潮湿地面",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

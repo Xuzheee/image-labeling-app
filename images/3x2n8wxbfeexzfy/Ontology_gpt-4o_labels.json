@@ -1,0 +1,49 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2n8wxbfeexzfy\\video\\3x2n8wxbfeexzfy_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "行李箱",
+          "人群"
+        ]
+      },
+      "scenes": [
+        "机场大厅"
+      ],
+      "events": [
+        "行走"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "香港机场"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "机场大厅"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "香港机场"
+        ],
+        "activity": [
+          "行走"
+        ]
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

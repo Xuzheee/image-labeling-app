@@ -1,0 +1,146 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "夜晚",
+          "consequence": "视野受限",
+          "action": "加强照明"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "临时安置床位",
+          "灾民休息"
+        ],
+        "general": [
+          "椅子",
+          "房间"
+        ]
+      },
+      "scenes": [
+        "避难场地",
+        "临时安置点"
+      ],
+      "events": [
+        "人员安置",
+        "休息"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [],
+        "environment": [
+          "房间",
+          "避难场地"
+        ],
+        "location": [
+          "临时安置点"
+        ],
+        "infrastructure": [
+          "床位",
+          "椅子"
+        ],
+        "personnel": [
+          "灾民",
+          "救援人员"
+        ],
+        "response_equipment": [
+          "床位",
+          "毯子"
+        ],
+        "affected_entity": [
+          "受影响群众"
+        ],
+        "activity": [
+          "安置",
+          "休息"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "房间",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "灾民",
+          "predicate": "in",
+          "object": "临时安置点"
+        },
+        {
+          "subject": "床位",
+          "predicate": "part_of",
+          "object": "避难场地"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "夜晚照明较差",
+          "consequence": "存在安全风险",
+          "action": "增加临时照明设施，确保安全"
+        }
+      ]
+    }
+  }
+]

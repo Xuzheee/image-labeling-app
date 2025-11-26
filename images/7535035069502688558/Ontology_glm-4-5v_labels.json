@@ -1,0 +1,69 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535035069502688558\\video\\7535035069502688558_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "暴雨天气"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "暴雨中的道路"
+      ],
+      "events": [
+        "汽车行驶在积水中"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "道路"
+        ],
+        "infrastructure": [
+          "被淹的的道路"
+        ],
+        "affected_entity": [
+          "被淹的的道路"
+        ],
+        "activity": [
+          "车辆行驶在积水中"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "in",
+          "object": "被淹的的道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被暴雨淹没",
+          "consequence": "交通受阻，存在车辆熄火或侧滑风险",
+          "action": "避免涉水行驶，选择绕行路线"
+        }
+      ]
+    }
+  }
+]

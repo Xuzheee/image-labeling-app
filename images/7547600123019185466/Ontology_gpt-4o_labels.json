@@ -1,0 +1,67 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600123019185466\\video\\7547600123019185466_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "船只"
+        ],
+        "general": [
+          "水面",
+          "雨滴"
+        ]
+      },
+      "scenes": [
+        "暴雨中的海面"
+      ],
+      "events": [
+        "暴雨"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "海面"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "海面",
+          "status": "正常",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "船只",
+          "predicate": "on",
+          "object": "海面"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "暴风雨",
+          "consequence": "航行困难",
+          "action": "建议避风"
+        }
+      ]
+    }
+  }
+]

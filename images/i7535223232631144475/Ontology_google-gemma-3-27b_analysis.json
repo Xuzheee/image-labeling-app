@@ -1,0 +1,226 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水"
+        ],
+        "general": [
+          "树木",
+          "山体体"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "航拍广东一高速收费站附近发生山体滑坡，道路双向封闭，恢复通行时间未定"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水",
+          "滑坡"
+        ],
+        "environment": [
+          "山体体"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "道路",
+          "predicate": "in",
+          "object": "积水街道"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "道路积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹且双向封闭",
+          "consequence": "交通中断",
+          "action": "启用备用路线，发布交通预警"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水"
+        ],
+        "general": [
+          "汽车",
+          "树木",
+          "电线杆"
+        ]
+      },
+      "scenes": [
+        "积水街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "航拍广东一高速收费站附近发生山体滑坡",
+        "道路双向封路恢复通行时间未定",
+        "记者从肇庆相关部门获悉4月22时左右S8广佛肇高速有路段已双向封路"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "收费站"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水",
+          "滑坡"
+        ],
+        "environment": [
+          "山体体"
+        ],
+        "response_equipment": [],
+        "location": [
+          "广东",
+          "广佛肇道路"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被淹的的道路",
+          "predicate": "near",
+          "object": "收费站"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹且双向封路",
+          "consequence": "交通中断",
+          "action": "启用备用路线，发布交通预警"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被淹的的道路",
+          "积水"
+        ],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "航拍广东一高速收费站附近发生山体滑坡",
+        "道路双向封路 恢复通行时间未定"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [
+          "滑坡"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "道路",
+          "predicate": "in_status_of",
+          "object": "积水"
+        },
+        {
+          "subject": "滑坡",
+          "predicate": "causes",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹且双向封路",
+          "consequence": "交通中断",
+          "action": "启用备用路线，发布交通预警信息"
+        }
+      ]
+    }
+  }
+]

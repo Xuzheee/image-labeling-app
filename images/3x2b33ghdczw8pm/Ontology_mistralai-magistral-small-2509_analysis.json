@@ -1,0 +1,99 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "天花板",
+          "灯具"
+        ]
+      },
+      "scenes": [
+        "室内"
+      ],
+      "events": [],
+      "time": [
+        "不确定"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "不确定"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "室内"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "天花板",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "应急床铺",
+          "救援物资"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "避难所内部"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "避难所内部"
+        ],
+        "response_equipment": [
+          "应急床铺",
+          "救援物资"
+        ],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "应急床铺",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

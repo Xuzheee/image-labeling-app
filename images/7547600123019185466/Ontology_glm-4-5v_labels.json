@@ -1,0 +1,69 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600123019185466\\video\\7547600123019185466_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "被雨淋湿的窗户",
+          "暴雨天气"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "暴雨环境"
+      ],
+      "events": [
+        "雨水"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "户外"
+        ],
+        "infrastructure": [
+          "窗户"
+        ],
+        "affected_entity": [
+          "被雨淋湿的区域"
+        ],
+        "activity": [
+          "降雨"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "窗户",
+          "status": "被雨淋湿",
+          "risk_level": "中",
+          "visibility": "较差",
+          "terrain_condition": "湿润"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "被雨淋湿的窗户",
+          "predicate": "in",
+          "object": "暴雨环境"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "持续强降雨",
+          "consequence": "局部区域可能出现积水",
+          "action": "加强排水系统检查，提醒居民注意防范"
+        }
+      ]
+    }
+  }
+]

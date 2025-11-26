@@ -1,0 +1,140 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "天花板",
+          "嵌入式灯",
+          "装饰墙板",
+          "地板",
+          "人脚"
+        ]
+      },
+      "scenes": [
+        "室内走廊"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2b33ghdczw8pm\\video\\3x2b33ghdczw8pm_semantic_frame_000004.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "临时床铺",
+          "被褥",
+          "避难人员"
+        ],
+        "general": [
+          "椅子",
+          "墙体",
+          "天花板",
+          "地毯"
+        ]
+      },
+      "scenes": [
+        "室内避难所",
+        "酒店大厅"
+      ],
+      "events": [
+        "人员休息",
+        "避难安置"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "室内空间",
+          "临时床铺"
+        ],
+        "personnel": [
+          "避难人员"
+        ],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "被褥",
+          "折叠床"
+        ],
+        "location": [
+          "酒店大厅",
+          "避难所"
+        ],
+        "activity": [
+          "避难安置",
+          "人员休息"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "室内空间",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "临时床铺",
+          "status": "正常使用",
+          "risk_level": "低",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "避难人员",
+          "predicate": "in",
+          "object": "酒店大厅"
+        },
+        {
+          "subject": "临时床铺",
+          "predicate": "is_used_for",
+          "object": "避难安置"
+        },
+        {
+          "subject": "被褥",
+          "predicate": "on",
+          "object": "临时床铺"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "多人在室内临时安置",
+          "consequence": "需保障基本生活物资与卫生条件",
+          "action": "安排轮班值守，提供饮食与医疗支持"
+        }
+      ]
+    }
+  }
+]

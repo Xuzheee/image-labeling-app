@@ -1,0 +1,143 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水"
+        ],
+        "general": [
+          "建筑物",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "河流"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流",
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "河流",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "积水",
+          "predicate": "in",
+          "object": "城市街区"
+        },
+        {
+          "subject": "建筑物",
+          "predicate": "near",
+          "object": "河流"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "河流水位上升",
+          "consequence": "可能导致城市内涝",
+          "action": "加强监测，准备排水设备"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000028.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水区域",
+          "漂浮的垃圾"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "被淹的的道路"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "被淹的的道路",
+          "排水井盖"
+        ],
+        "personnel": [],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "草地"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "漂浮的垃圾",
+          "predicate": "in",
+          "object": "积水区域"
+        },
+        {
+          "subject": "排水井盖",
+          "predicate": "on",
+          "object": "被淹的的道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路严重积水",
+          "consequence": "交通中断，存在二次灾害风险",
+          "action": "启用备用路线，清理排水系统，防止垃圾堵塞"
+        }
+      ]
+    }
+  }
+]

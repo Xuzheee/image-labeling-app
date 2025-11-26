@@ -1,0 +1,142 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "建筑物",
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [
+        "雨天行驶"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [],
+        "environment": [
+          "雨天",
+          "城市环境"
+        ],
+        "location": [
+          "城市街道"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑物"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "湿滑"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "行驶在",
+          "object": "道路"
+        },
+        {
+          "subject": "建筑物",
+          "predicate": "位于",
+          "object": "城市街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "雨天行驶",
+          "consequence": "交通事故风险增加",
+          "action": "减速慢行"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000014.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "汽车",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "暴雨夜景"
+      ],
+      "events": [
+        "暴雨天气"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "城市道路"
+        ],
+        "location": [],
+        "infrastructure": [
+          "道路",
+          "建筑"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "较差",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "暴雨天气",
+          "consequence": "交通受阻",
+          "action": "谨慎驾驶，避开积水路段"
+        }
+      ]
+    }
+  }
+]

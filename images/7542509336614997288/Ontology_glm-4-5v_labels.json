@@ -1,0 +1,702 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000002.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "红色三角警示牌",
+          "新能源汽车"
+        ],
+        "general": [
+          "道路"
+        ]
+      },
+      "scenes": [
+        "夜晚的城市道路"
+      ],
+      "events": [
+        "移动充电救援"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "新能源车半路没电的尴尬"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市道路"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市道路"
+        ],
+        "activity": [
+          "移动充电救援"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "新能源汽车",
+          "status": "故障",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "新能源汽车",
+          "predicate": "in",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "新能源汽车半路没电",
+          "consequence": "无法继续行驶",
+          "action": "提供移动充电救援服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "汽车"
+        ],
+        "general": [
+          "街道"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "广州车主都懂"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "街道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "城市街道"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "救援"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "街道",
+          "status": "正常",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "车辆电量不足",
+          "consequence": "车主无法正常行驶",
+          "action": "提供移动充电救援服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [
+        "城市街道夜晚"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "极电侠移动充电救援随叫随到"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [],
+        "environment": [
+          "城市街道"
+        ],
+        "location": [
+          "城市街道（广州）"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "24小时全城覆盖"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [],
+        "environment": [],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000012.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "故障汽车",
+          "移动充电设备"
+        ],
+        "general": [
+          "道路"
+        ]
+      },
+      "scenes": [
+        "夜间道路场景"
+      ],
+      "events": [
+        "汽车充电救援"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "专业充电车30分钟抵达现场"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "移动充电设备"
+        ],
+        "location": [],
+        "activity": [
+          "充电救援"
+        ],
+        "affected_entity": [
+          "故障汽车"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "故障汽车",
+          "status": "故障",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "移动充电设备",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "故障汽车",
+          "predicate": "in",
+          "object": "道路"
+        },
+        {
+          "subject": "移动充电设备",
+          "predicate": "is_used_for",
+          "object": "充电救援"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "车辆出现故障",
+          "consequence": "无法正常行驶",
+          "action": "提供移动充电服务解决续航问题"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000013.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "道路",
+          "故障汽车",
+          "警示三角牌"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "夜间城市道路"
+      ],
+      "events": [
+        "设置警示标志",
+        "汽车行驶"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "15分钟快充续航30公里"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "affected_entity": [
+          "故障汽车"
+        ],
+        "activity": [
+          "移动充电救援"
+        ],
+        "hazard": [],
+        "environment": [],
+        "location": [],
+        "response_equipment": [],
+        "personnel": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "故障汽车",
+          "status": "故障",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "故障汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "警示三角牌",
+          "predicate": "on",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "夜间道路视线不佳且车辆故障",
+          "consequence": "交通受阻，存在二次事故风险",
+          "action": "开启警示灯，联系移动充电救援服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000016.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "电动车/混动车全系适用"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "城市街道"
+        ],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "车主车辆电量不足",
+          "consequence": "无法正常行驶",
+          "action": "联系极电侠获取移动充电救援服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000019.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [
+        "移动充电救援",
+        "上门服务"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "暴雨天照样上门服务"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "城市街道"
+        ],
+        "activity": [
+          "移动充电救援",
+          "上门服务"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "location": [],
+        "infrastructure": []
+      },
+      "attributes": [],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "in",
+          "object": "城市街道"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "暴雨天气",
+          "consequence": "车辆可能面临电量不足问题",
+          "action": "提供移动充电救援服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000020.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "移动充电设备"
+        ],
+        "general": []
+      },
+      "scenes": [
+        "夜晚户外场景"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "上周珠江新城王先生实测：充电效率比预期快20%"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "response_equipment": [
+          "移动充电设备"
+        ],
+        "hazard": [],
+        "environment": [],
+        "location": [],
+        "personnel": [],
+        "activity": [],
+        "infrastructure": []
+      },
+      "attributes": [
+        {
+          "concept": "移动充电设备",
+          "status": "正常",
+          "operational_status": "完全可用",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "移动充电设备",
+          "predicate": "has_function",
+          "object": "救援充电"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "车辆电量耗尽",
+          "consequence": "无法启动行驶",
+          "action": "使用移动充电设备提供紧急充电服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000021.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "故障汽车"
+        ],
+        "general": [
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [
+        "移动充电救援"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        {
+          "content": "广州车主注意！极电侠移动充电救援解你燃眉之急",
+          "semantic": "宣传移动充电救援服务"
+        },
+        {
+          "content": "上周珠江新城王先生实测：充电效率比预期快20%",
+          "semantic": "实证充电效率"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": [
+          "移动充电救援"
+        ],
+        "affected_entity": [
+          "故障汽车"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "故障汽车",
+          "status": "故障",
+          "risk_level": "中",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "故障汽车",
+          "predicate": "in",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "车辆发生故障",
+          "consequence": "无法正常行驶",
+          "action": "提供移动充电救援服务"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000030.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "护栏",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市道路"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "快来点击头像到主页致电联系吧"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "护栏"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "树木",
+          "城市景观"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市道路"
+        ],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [
+        {
+          "subject": "道路",
+          "predicate": "in",
+          "object": "城市环境"
+        },
+        {
+          "subject": "护栏",
+          "predicate": "along",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路旁设有警示三角牌",
+          "consequence": "提示车辆可能存在故障需救援",
+          "action": "联系移动充电救援服务"
+        }
+      ]
+    }
+  }
+]

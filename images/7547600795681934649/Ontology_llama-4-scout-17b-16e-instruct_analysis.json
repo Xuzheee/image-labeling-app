@@ -1,0 +1,144 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水"
+        ],
+        "general": [
+          "建筑",
+          "树木",
+          "道路"
+        ]
+      },
+      "scenes": [
+        "城市积水"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流",
+          "城市"
+        ],
+        "location": [
+          "城市区域"
+        ],
+        "infrastructure": [
+          "建筑",
+          "道路"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "积水",
+          "predicate": "in",
+          "object": "城市区域"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "洪水淹没道路",
+          "consequence": "交通中断",
+          "action": "启用备用路线，疏散群众"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600795681934649\\video\\7547600795681934649_video_semantic_frame_000028.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水",
+          "泥泞道路"
+        ],
+        "general": [
+          "道路",
+          "草地"
+        ]
+      },
+      "scenes": [
+        "积水场景",
+        "自然环境"
+      ],
+      "events": [
+        "积水泛滥"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "积水"
+        ],
+        "environment": [
+          "河流",
+          "草地"
+        ],
+        "location": [
+          "道路"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "damage_status": "积水",
+          "risk_level": "高",
+          "visibility": "一般",
+          "terrain_condition": "泥泞"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "积水",
+          "predicate": "in",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "道路被淹没",
+          "consequence": "交通中断",
+          "action": "启用备用路线，疏散人员"
+        }
+      ]
+    }
+  }
+]

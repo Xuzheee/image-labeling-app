@@ -1,0 +1,221 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡区域",
+          "受损道路"
+        ],
+        "general": [
+          "植被",
+          "河流"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "山体体滑坡发生"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "新京报 航拍广东一高速收费站附近 发生山体滑坡 道路双向封路抢修 恢复通行时间未定"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "environment": [
+          "山体区"
+        ],
+        "infrastructure": [
+          "道路道路"
+        ],
+        "affected_entity": [
+          "受损道路"
+        ],
+        "activity": [],
+        "personnel": [],
+        "response_equipment": []
+      },
+      "attributes": [
+        {
+          "concept": "受损道路",
+          "status": "损坏",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "受损道路"
+        },
+        {
+          "subject": "受损道路",
+          "predicate": "blocking",
+          "object": "交通"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致道路受损",
+          "consequence": "交通中断",
+          "action": "抢修受损道路，启用备用交通路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡",
+          "被阻断的的道路"
+        ],
+        "general": [
+          "树木",
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "道路封堵"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "新京报 航拍广东一高速收费站附近发生山体滑坡 道路双向封路抢修 恢复通行时间未定 记者从肇庆相关部门获悉 4日22时左右 S8广佛肇高速有路段已双向封路"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": [],
+        "affected_entity": [
+          "被阻断的的道路"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "损坏",
+          "operational_status": "完全中断",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "causes",
+          "object": "道路封堵"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致道路封堵",
+          "consequence": "交通中断",
+          "action": "开展抢修作业，设置绕行路线"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\i7535223232631144475\\i7535223232631144475_video_1_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "山体体滑坡",
+          "封路的道路"
+        ],
+        "general": [
+          "汽车"
+        ]
+      },
+      "scenes": [
+        "山体体滑坡现场"
+      ],
+      "events": [
+        "道路封路"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "新京报 航拍广东一高速收费站附近 发生山体滑坡 道路双向封路抢修 恢复通行时间未定",
+        "佛山市广佛肇高速公路有限公司客服称 现场正在施工抢险，暂不确定恢复通行时间"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "hazard": [
+          "山体体滑坡"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "location": [
+          "广东道路收费站附近"
+        ],
+        "personnel": [],
+        "response_equipment": [],
+        "environment": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "完全中断",
+          "risk_level": "高",
+          "visibility": "较差",
+          "terrain_condition": "有大型障碍物"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "山体体滑坡",
+          "predicate": "blocking",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "山体滑坡导致道路封路",
+          "consequence": "交通中断",
+          "action": "开展抢险作业，疏导滞留车辆"
+        }
+      ]
+    }
+  }
+]

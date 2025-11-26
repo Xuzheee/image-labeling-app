@@ -1,0 +1,311 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2cdfjskb4kkaq\\video\\3x2cdfjskb4kkaq_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "建筑",
+          "电线"
+        ]
+      },
+      "scenes": [
+        "暴雨街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "忽然狂风暴雨"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑",
+          "电线"
+        ],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "暴雨导致道路积水",
+          "consequence": "交通可能受阻",
+          "action": "建议避开低洼地区"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2cdfjskb4kkaq\\video\\3x2cdfjskb4kkaq_semantic_frame_000002.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "摩托车",
+          "电线",
+          "建筑"
+        ]
+      },
+      "scenes": [
+        "城市街区"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "忽然狂风暴雨"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "城市街区"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "电线",
+          "status": "正常",
+          "risk_level": "无",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "狂风暴雨",
+          "consequence": "可能导致电线损坏",
+          "action": "检查电力设施"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2cdfjskb4kkaq\\video\\3x2cdfjskb4kkaq_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "建筑",
+          "电线"
+        ]
+      },
+      "scenes": [
+        "暴雨街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "忽然狂风暴雨"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑",
+          "电线"
+        ],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "暴雨",
+          "predicate": "causes",
+          "object": "积水"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "暴雨导致积水",
+          "consequence": "可能导致交通不便",
+          "action": "建议避免外出"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2cdfjskb4kkaq\\video\\3x2cdfjskb4kkaq_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "蓝色防水布"
+        ],
+        "general": [
+          "楼梯",
+          "建筑物"
+        ]
+      },
+      "scenes": [
+        "暴雨环境"
+      ],
+      "events": [
+        "暴雨"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "忽然狂风暴雨"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "建筑物",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "蓝色防水布",
+          "predicate": "on",
+          "object": "楼梯"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "暴雨",
+          "consequence": "可能导致积水",
+          "action": "检查排水系统"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2cdfjskb4kkaq\\video\\3x2cdfjskb4kkaq_semantic_frame_000008.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "水桶",
+          "墙体",
+          "地面"
+        ]
+      },
+      "scenes": [
+        "暴雨环境"
+      ],
+      "events": [
+        "积水"
+      ],
+      "time": [
+        "不确定"
+      ],
+      "text-overlay": [
+        "忽然狂风暴雨"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "不确定"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "地面",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [],
+      "inferences": [
+        {
+          "condition": "地面积水",
+          "consequence": "可能导致滑倒",
+          "action": "设置警示标志"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "积水道路",
+          "雨中行驶的汽车"
+        ],
+        "general": [
+          "酒店建筑",
+          "交通信号灯",
+          "路灯",
+          "行人",
+          "电动车"
+        ]
+      },
+      "scenes": [
+        "暴雨街道",
+        "城市夜景"
+      ],
+      "events": [
+        "汽车在积水中行驶",
+        "行人冒雨通行"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "text": "国际酒店 客房",
+          "semantic": "标识建筑物功能为住宿服务"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "积水道路",
+          "交通信号灯",
+          "路灯"
+        ],
+        "personnel": [
+          "行人"
+        ],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [
+          "国际酒店"
+        ],
+        "activity": [
+          "车辆行驶",
+          "行人通行"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "积水道路",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "交通信号灯",
+          "status": "正常",
+          "operational_status": "完全可用",
+          "visibility": "一般"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "in",
+          "object": "积水道路"
+        },
+        {
+          "subject": "行人",
+          "predicate": "near",
+          "object": "积水道路"
+        },
+        {
+          "subject": "积水道路",
+          "predicate": "affects",
+          "object": "汽车行驶"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "路面严重积水",
+          "consequence": "可能导致车辆熄火或交通拥堵",
+          "action": "提醒驾驶员减速慢行，必要时启用排水设施"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011278021365032\\video\\7547011278021365032_video_semantic_frame_000014.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车",
+          "道路",
+          "路灯",
+          "建筑物",
+          "雨滴"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "雨夜街道"
+      ],
+      "events": [
+        "汽车行驶",
+        "雨水持续"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        {
+          "text": "欧斯卡国际",
+          "semantic": "商业建筑标识，可能为酒店或商场"
+        }
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "路灯",
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "城市街区"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "路灯",
+          "status": "正常",
+          "operational_status": "完全可用",
+          "visibility": "一般"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "雨滴",
+          "predicate": "on",
+          "object": "车窗"
+        },
+        {
+          "subject": "建筑物",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "夜间降雨导致路面湿滑、能见度下降",
+          "consequence": "增加交通事故风险",
+          "action": "提醒驾驶员减速慢行，开启雾灯，保持安全车距"
+        }
+      ]
+    }
+  }
+]

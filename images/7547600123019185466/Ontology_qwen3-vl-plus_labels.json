@@ -1,0 +1,82 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547600123019185466\\video\\7547600123019185466_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "窗户",
+          "雨滴",
+          "电线杆"
+        ]
+      },
+      "scenes": [
+        "暴雨天气",
+        "城市街区"
+      ],
+      "events": [
+        "强雨水持续"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "电线杆",
+          "窗户"
+        ],
+        "personnel": [],
+        "hazard": [
+          "暴雨"
+        ],
+        "environment": [
+          "城市街区"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "窗户",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "电线杆",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "雨滴",
+          "predicate": "on",
+          "object": "窗户"
+        },
+        {
+          "subject": "电线杆",
+          "predicate": "near",
+          "object": "窗户"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "窗外强降雨导致能见度下降",
+          "consequence": "影响户外活动与交通出行",
+          "action": "建议减少外出，注意防滑与行车安全"
+        }
+      ]
+    }
+  }
+]

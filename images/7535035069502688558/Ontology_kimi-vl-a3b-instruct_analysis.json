@@ -1,0 +1,21 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7535035069502688558\\video\\7535035069502688558_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {},
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

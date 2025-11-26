@@ -1,0 +1,295 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车",
+          "手推车",
+          "雨伞",
+          "树木",
+          "建筑物",
+          "工人",
+          "行人"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "湿滑道路"
+      ],
+      "events": [
+        "人员搬运物资",
+        "行人撑雨伞行走"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "建筑物"
+        ],
+        "personnel": [
+          "工人",
+          "行人"
+        ],
+        "hazard": [],
+        "environment": [
+          "城市街区",
+          "树木"
+        ],
+        "response_equipment": [
+          "手推车",
+          "雨伞"
+        ],
+        "location": [],
+        "activity": [
+          "物资搬运",
+          "行人通行"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "工人",
+          "predicate": "involves",
+          "object": "物资搬运"
+        },
+        {
+          "subject": "行人",
+          "predicate": "involves",
+          "object": "行人通行"
+        },
+        {
+          "subject": "手推车",
+          "predicate": "is_used_for",
+          "object": "物资搬运"
+        },
+        {
+          "subject": "雨伞",
+          "predicate": "is_used_for",
+          "object": "雨伞"
+        },
+        {
+          "subject": "工人",
+          "predicate": "near",
+          "object": "建筑物"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面有积水",
+          "consequence": "可能影响通行安全",
+          "action": "提醒行人注意防滑，及时排水"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000009.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "箱子房屋",
+          "电动车",
+          "楼梯",
+          "晾衣架",
+          "雨衣",
+          "山体体",
+          "护栏"
+        ]
+      },
+      "scenes": [
+        "雨天巷道",
+        "临时街区"
+      ],
+      "events": [
+        "人员行走",
+        "衣物晾晒"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "箱子房屋",
+          "楼梯",
+          "护栏"
+        ],
+        "personnel": [
+          "雨衣的人",
+          "赤膊男子"
+        ],
+        "hazard": [],
+        "environment": [
+          "山体体",
+          "雨天巷道"
+        ],
+        "response_equipment": [],
+        "location": [
+          "临时街区"
+        ],
+        "activity": [
+          "人员行走",
+          "衣物晾晒"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "地面",
+          "status": "积水",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        },
+        {
+          "concept": "箱子房屋",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "雨衣的人",
+          "predicate": "in",
+          "object": "雨天巷道"
+        },
+        {
+          "subject": "电动车",
+          "predicate": "near",
+          "object": "箱子房屋"
+        },
+        {
+          "subject": "楼梯",
+          "predicate": "part_of",
+          "object": "箱子房屋"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面有积水，人员穿着雨衣行走",
+          "consequence": "存在滑倒或涉水风险",
+          "action": "提醒注意防滑，必要时铺设防滑垫或排水"
+        },
+        {
+          "condition": "叠加文字提示‘每个人测体温’",
+          "consequence": "可能处于传染病防控期，需加强健康监测",
+          "action": "配合体温检测，保持个人卫生与社交距离"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534674785406799139\\video\\7534674785406799139_video_semantic_frame_000010.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "建筑",
+          "电动车",
+          "共享自行车",
+          "护栏",
+          "雨衣",
+          "头盔",
+          "山体体"
+        ]
+      },
+      "scenes": [
+        "雨天街道",
+        "城市街区"
+      ],
+      "events": [
+        "人员行走"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "每个人测体温"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "建筑",
+          "护栏"
+        ],
+        "personnel": [
+          "人员"
+        ],
+        "hazard": [],
+        "environment": [
+          "山体体",
+          "街道"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "街道",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "一般",
+          "terrain_condition": "积水"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "人员",
+          "predicate": "involves",
+          "object": "行走"
+        },
+        {
+          "subject": "人员",
+          "predicate": "wearing",
+          "object": "雨衣"
+        },
+        {
+          "subject": "电动车",
+          "predicate": "near",
+          "object": "建筑"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "地面湿滑，有积水",
+          "consequence": "存在滑倒风险",
+          "action": "提醒行人注意防滑，清理积水"
+        }
+      ]
+    }
+  }
+]

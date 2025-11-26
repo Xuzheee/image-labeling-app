@@ -1,0 +1,754 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000002.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "红色警示三角牌",
+          "新能源车"
+        ],
+        "general": [
+          "道路",
+          "隧道",
+          "道路标线"
+        ]
+      },
+      "scenes": [
+        "隧道内道路"
+      ],
+      "events": [
+        "汽车抛锚",
+        "设置警示标志"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "新能源车半路没电的尴尬"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "隧道"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "红色警示三角牌"
+        ],
+        "location": [
+          "隧道内"
+        ],
+        "activity": [
+          "车辆抛锚",
+          "设置警示标志"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "中",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "红色警示三角牌",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "红色警示三角牌",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "新能源车",
+          "predicate": "in",
+          "object": "隧道内"
+        },
+        {
+          "subject": "新能源车",
+          "predicate": "involves",
+          "object": "汽车抛锚"
+        },
+        {
+          "subject": "红色警示三角牌",
+          "predicate": "is_used_for",
+          "object": "设置警示标志"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "新能源车在隧道内抛锚",
+          "consequence": "可能造成后方车辆追尾风险",
+          "action": "立即放置警示牌，开启双闪，联系救援"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000003.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "植被"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "广州车主都懂"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "植被"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "植被",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "图像中无灾害迹象，叠加文字为商业推广",
+          "consequence": "不构成应急响应需求",
+          "action": "无需启动灾害响应机制"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车",
+          "车门",
+          "路灯",
+          "草地"
+        ]
+      },
+      "scenes": [
+        "夜间街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "极电侠移动充电救援随叫随到"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000007.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "树木",
+          "灌木丛",
+          "护栏",
+          "建筑物"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "24小时全城覆盖"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "护栏",
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "树木",
+          "灌木丛"
+        ],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "灌木丛",
+          "predicate": "near",
+          "object": "道路"
+        },
+        {
+          "subject": "护栏",
+          "predicate": "near",
+          "object": "道路"
+        },
+        {
+          "subject": "建筑物",
+          "predicate": "in_background_of",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "无灾害迹象，道路畅通",
+          "consequence": "无需紧急响应",
+          "action": "维持常规交通管理"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000012.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [
+          "移动充电设备",
+          "电动汽车"
+        ],
+        "general": [
+          "道路",
+          "路灯",
+          "斑马线"
+        ]
+      },
+      "scenes": [
+        "夜间城市道路"
+      ],
+      "events": [
+        "电动汽车充电救援"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "专业充电车30分钟抵达现场"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "移动充电设备"
+        ],
+        "location": [],
+        "activity": [
+          "充电救援"
+        ]
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "移动充电设备",
+          "predicate": "is_used_for",
+          "object": "充电救援"
+        },
+        {
+          "subject": "电动汽车",
+          "predicate": "involves",
+          "object": "充电救援"
+        },
+        {
+          "subject": "移动充电设备",
+          "predicate": "on",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "电动汽车电量耗尽停在路边",
+          "consequence": "影响交通或造成安全隐患",
+          "action": "启用移动充电服务快速恢复车辆运行"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000013.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "交通标志牌",
+          "汽车",
+          "警示三角牌",
+          "路灯"
+        ]
+      },
+      "scenes": [
+        "城市道路夜景"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "15分钟快充续航30公里",
+        "观光大道(东)",
+        "观澜高尔夫大道",
+        "观澜古墟"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "交通标志牌"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "观光大道(东)",
+          "观澜高尔夫大道",
+          "观澜古墟"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "一般",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "警示三角牌",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "交通标志牌",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "车辆停靠路边并放置警示三角牌",
+          "consequence": "可能为车辆故障或临时停车",
+          "action": "建议后方车辆减速避让，保持安全距离"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000016.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车",
+          "公交车",
+          "道路",
+          "树木"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "电动车/混动车全系适用"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000019.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车",
+          "道路"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "暴雨天照样上门服务"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "较差",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000020.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "移动充电设备",
+          "地面",
+          "电线"
+        ]
+      },
+      "scenes": [
+        "夜间户外地面"
+      ],
+      "events": [],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "上周珠江新城王先生实测：充电效率比预期快20%"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [
+          "移动充电设备"
+        ],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "移动充电设备",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "移动充电设备",
+          "predicate": "on",
+          "object": "地面"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "移动充电设备在夜间运行",
+          "consequence": "可为车辆提供应急电力支持",
+          "action": "建议推广用于城市交通应急保障场景"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000021.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "汽车",
+          "道路",
+          "警示三角牌",
+          "树木",
+          "街区"
+        ]
+      },
+      "scenes": [
+        "城市街道"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "上周珠江新城王先生实测：充电效率比预期快20%"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "警示三角牌",
+          "predicate": "on",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "无灾害迹象，仅为车辆服务场景",
+          "consequence": "无需应急响应",
+          "action": "维持正常交通管理"
+        }
+      ]
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7542509336614997288\\video\\7542509336614997288_video_semantic_frame_000030.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "护栏",
+          "树木",
+          "汽车",
+          "交通标志",
+          "井盖"
+        ]
+      },
+      "scenes": [
+        "城市道路"
+      ],
+      "events": [],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "广州车主注意！极电侠移动充电救援解你燃眉之急",
+        "快来点击头像到主页致电联系吧"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "道路",
+          "护栏",
+          "井盖"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [
+          "树木"
+        ],
+        "response_equipment": [],
+        "location": [
+          "城市道路"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "护栏",
+          "predicate": "near",
+          "object": "道路"
+        },
+        {
+          "subject": "井盖",
+          "predicate": "on",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "无灾害迹象，道路正常通行",
+          "consequence": "无需应急响应",
+          "action": "保持常规交通管理"
+        }
+      ]
+    }
+  }
+]

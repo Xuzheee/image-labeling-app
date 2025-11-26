@@ -1,0 +1,91 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7547011925462289722\\video\\7547011925462289722_video_semantic_frame_000000.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "道路",
+          "汽车",
+          "电动车",
+          "路灯",
+          "树木",
+          "建筑物"
+        ]
+      },
+      "scenes": [
+        "城市街区",
+        "夜间街道"
+      ],
+      "events": [
+        "汽车行驶"
+      ],
+      "time": [
+        "夜晚"
+      ],
+      "text-overlay": [
+        "防御“塔巴”台风工作提示",
+        "为做好2025年第16号“塔巴”台风防御，保障安全，现提示各机构老板注意⚠️"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "夜晚"
+        ],
+        "infrastructure": [
+          "道路",
+          "路灯",
+          "建筑物"
+        ],
+        "personnel": [],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "城市街区"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "道路",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        },
+        {
+          "concept": "路灯",
+          "status": "正常",
+          "operational_status": "完全可用",
+          "risk_level": "低"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "汽车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "电动车",
+          "predicate": "on",
+          "object": "道路"
+        },
+        {
+          "subject": "路灯",
+          "predicate": "near",
+          "object": "道路"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "图像叠加文字提示防御‘塔巴’台风",
+          "consequence": "可能即将发生强风或暴雨灾害",
+          "action": "建议提前加固设施、检查排水系统、准备应急物资"
+        }
+      ]
+    }
+  }
+]

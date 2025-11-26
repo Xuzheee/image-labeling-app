@@ -1,0 +1,40 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534924739828092202\\image\\7534924739828092202_image_3.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {},
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  },
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\7534924739828092202\\image\\7534924739828092202_image_6.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": []
+      },
+      "scenes": [],
+      "events": [],
+      "time": [],
+      "text-overlay": []
+    },
+    "ontology": {
+      "concepts": {},
+      "attributes": [],
+      "relations": [],
+      "inferences": []
+    }
+  }
+]

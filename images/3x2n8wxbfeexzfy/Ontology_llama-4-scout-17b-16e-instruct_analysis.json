@@ -1,0 +1,70 @@
+[
+  {
+    "image": "E:\\RA\\social_media_analysis\\Ontology_analysis\\image_recognition_dataset\\3x2n8wxbfeexzfy\\video\\3x2n8wxbfeexzfy_semantic_frame_000005.jpg",
+    "visual_analysis": {
+      "objects": {
+        "disaster-relevant": [],
+        "general": [
+          "行李",
+          "旅客"
+        ]
+      },
+      "scenes": [
+        "机场"
+      ],
+      "events": [
+        "人员流动"
+      ],
+      "time": [
+        "白天"
+      ],
+      "text-overlay": [
+        "香港机场"
+      ]
+    },
+    "ontology": {
+      "concepts": {
+        "time": [
+          "白天"
+        ],
+        "infrastructure": [
+          "机场",
+          "航站楼"
+        ],
+        "personnel": [
+          "旅客"
+        ],
+        "hazard": [],
+        "environment": [],
+        "response_equipment": [],
+        "location": [
+          "香港"
+        ],
+        "activity": []
+      },
+      "attributes": [
+        {
+          "concept": "机场",
+          "status": "正常",
+          "risk_level": "低",
+          "visibility": "清晰",
+          "terrain_condition": "正常"
+        }
+      ],
+      "relations": [
+        {
+          "subject": "旅客",
+          "predicate": "in",
+          "object": "机场"
+        }
+      ],
+      "inferences": [
+        {
+          "condition": "机场运作正常",
+          "consequence": "无明显影响",
+          "action": ""
+        }
+      ]
+    }
+  }
+]
