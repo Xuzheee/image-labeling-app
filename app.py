@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory, flash, send_file
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory, flash, send_file, jsonify
 from flask_login import LoginManager, login_user, logout_user, login_required, UserMixin, current_user
 import json
 import os
@@ -133,6 +133,31 @@ def save_data_for_current_user():
     except Exception as e:
         return str(e)
 
+def get_user_progress_file(username):
+    """获取用户进度文件路径"""
+    return os.path.join("data", f"progress_{username}.json")
+
+def load_user_progress(username):
+    """加载用户上次查看的位置"""
+    progress_file = get_user_progress_file(username)
+    if os.path.exists(progress_file):
+        try:
+            with open(progress_file, 'r', encoding='utf-8') as f:
+                progress = json.load(f)
+                return progress.get('last_image', None)
+        except:
+            pass
+    return None
+
+def save_user_progress(username, image_name):
+    """保存用户当前查看的位置"""
+    progress_file = get_user_progress_file(username)
+    try:
+        with open(progress_file, 'w', encoding='utf-8') as f:
+            json.dump({'last_image': image_name, 'timestamp': datetime.datetime.now().isoformat()}, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Failed to save progress: {e}")
+
 @app.route('/')
 @login_required
 def index():
@@ -145,8 +170,14 @@ def index():
         return "No data found. Please ensure data/output_data.json exists as a template."
 
     current_img_name = request.args.get('img')
+    
+    # 如果没有指定图片，尝试恢复上次查看的位置
     if not current_img_name and image_names:
-        current_img_name = image_names[0]
+        last_image = load_user_progress(current_user.id)
+        if last_image and last_image in image_names:
+            current_img_name = last_image
+        else:
+            current_img_name = image_names[0]
 
     current_data = next((item for item in annotations if item['image'] == current_img_name), None)
     
@@ -158,6 +189,9 @@ def index():
     except ValueError:
         curr_idx = 0
     
+    # 保存当前查看位置
+    save_user_progress(current_user.id, current_img_name)
+    
     total = len(image_names)
     prev_img = image_names[(curr_idx - 1) % total]
     next_img = image_names[(curr_idx + 1) % total]
@@ -167,7 +201,8 @@ def index():
                            current_index=curr_idx + 1,
                            total=total,
                            prev_img=prev_img,
-                           next_img=next_img)
+                           next_img=next_img,
+                           image_names=image_names)
 
 @app.route('/annotate', methods=['POST'])
 @login_required
@@ -203,10 +238,92 @@ def annotate():
         err = save_data_for_current_user()
         if err:
             return f"Save Error: {err}"
+        # 保存进度
+        save_user_progress(current_user.id, img_name)
     
     next_img = request.form.get('next_img_name')
     target = next_img if next_img else img_name
     return redirect(url_for('index', img=target))
+
+@app.route('/jump', methods=['POST'])
+@login_required
+def jump_to():
+    """跳转到指定页码或图片名称"""
+    jump_input = request.form.get('jump_input', '').strip()
+    if not jump_input:
+        return redirect(url_for('index'))
+    
+    annotations = load_data_for_current_user()
+    image_names = [item['image'] for item in annotations] if annotations else []
+    
+    if not image_names:
+        return redirect(url_for('index'))
+    
+    target_img = None
+    
+    # 尝试作为页码解析（1-based）
+    try:
+        page_num = int(jump_input)
+        if 1 <= page_num <= len(image_names):
+            target_img = image_names[page_num - 1]
+    except ValueError:
+        pass
+    
+    # 如果不是页码，尝试作为图片名称匹配
+    if not target_img:
+        # 精确匹配
+        if jump_input in image_names:
+            target_img = jump_input
+        else:
+            # 模糊匹配（包含）
+            matches = [img for img in image_names if jump_input.lower() in img.lower()]
+            if matches:
+                target_img = matches[0]
+    
+    if target_img:
+        return redirect(url_for('index', img=target_img))
+    else:
+        flash(f'未找到匹配的图片: {jump_input}')
+        return redirect(url_for('index'))
+
+@app.route('/autosave', methods=['POST'])
+@login_required
+def autosave():
+    """自动保存接口（用于定时保存）"""
+    img_name = request.form.get('image_name')
+    if not img_name:
+        return jsonify({'success': False, 'message': 'Missing image name'}), 400
+    
+    # 获取表单数据
+    new_concepts = [x for x in request.form.getlist('concepts') if x.strip()]
+    new_attributes = [x for x in request.form.getlist('attributes') if x.strip()]
+    
+    raw_relations = request.form.get('relations', '[]')
+    try:
+        new_relations = json.loads(raw_relations)
+    except:
+        new_relations = []
+    
+    # 更新数据
+    annotations = load_data_for_current_user()
+    updated = False
+    
+    for item in annotations:
+        if item['image'] == img_name:
+            item['concepts'] = new_concepts
+            item['attributes'] = new_attributes
+            item['relations'] = new_relations
+            updated = True
+            break
+    
+    if updated:
+        err = save_data_for_current_user()
+        if err:
+            return jsonify({'success': False, 'message': err}), 500
+        save_user_progress(current_user.id, img_name)
+        return jsonify({'success': True, 'message': '已自动保存', 'timestamp': datetime.datetime.now().strftime('%H:%M:%S')})
+    
+    return jsonify({'success': False, 'message': 'Image not found'}), 404
 
 # --- 4. 智能图片路由 ---
 @app.route('/images/<path:filename>')

@@ -120,6 +120,25 @@
                 Current: {{ current_index }} / {{ total }}
             </span>
             
+            <!-- 跳转输入框 -->
+            <form method="POST" action="/jump" class="d-flex gap-1" style="width: 200px;" onsubmit="return handleJump(event)">
+                <input type="text" 
+                       class="form-control form-control-sm" 
+                       name="jump_input" 
+                       id="jump-input"
+                       placeholder="页码或图片名" 
+                       style="width: 150px;"
+                       autocomplete="off">
+                <button type="submit" class="btn btn-outline-primary btn-sm" title="跳转到指定页">
+                    <i class="bi bi-arrow-right-circle"></i>
+                </button>
+            </form>
+            
+            <!-- 保存状态提示 -->
+            <span id="save-status" class="badge bg-success" style="display: none;">
+                <i class="bi bi-check-circle me-1"></i><span id="save-status-text">已保存</span>
+            </span>
+            
             <a href="/download" class="btn btn-outline-success btn-sm" title="Download JSON">
                 <i class="bi bi-download me-1"></i> Export Data
             </a>
@@ -341,6 +360,96 @@
             event.preventDefault();
             document.querySelector('#annoForm').submit();
         }
+    });
+
+    // 跳转处理函数
+    function handleJump(event) {
+        var input = document.getElementById('jump-input');
+        if (!input.value.trim()) {
+            event.preventDefault();
+            return false;
+        }
+        return true;
+    }
+
+    // 自动保存功能
+    var autoSaveInterval = null;
+    var lastSaveTime = null;
+    var isDirty = false;
+
+    function markDirty() {
+        isDirty = true;
+    }
+
+    function showSaveStatus(message, isSuccess) {
+        var statusEl = document.getElementById('save-status');
+        var statusText = document.getElementById('save-status-text');
+        statusText.textContent = message;
+        statusEl.className = 'badge ' + (isSuccess ? 'bg-success' : 'bg-warning');
+        statusEl.style.display = 'inline-block';
+        
+        setTimeout(function() {
+            statusEl.style.display = 'none';
+        }, 3000);
+    }
+
+    function performAutoSave() {
+        if (!isDirty) return;
+        
+        var form = document.getElementById('annoForm');
+        var formData = new FormData(form);
+        
+        fetch('/autosave', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                isDirty = false;
+                lastSaveTime = new Date();
+                showSaveStatus('已自动保存 ' + data.timestamp, true);
+            } else {
+                showSaveStatus('保存失败: ' + data.message, false);
+            }
+        })
+        .catch(error => {
+            console.error('Auto-save error:', error);
+            showSaveStatus('保存出错', false);
+        });
+    }
+
+    // 监听表单变化
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('annoForm');
+        var inputs = form.querySelectorAll('input, textarea');
+        
+        inputs.forEach(function(input) {
+            input.addEventListener('input', markDirty);
+            input.addEventListener('change', markDirty);
+        });
+
+        // 每30秒自动保存一次
+        autoSaveInterval = setInterval(performAutoSave, 30000);
+
+        // 页面离开前保存
+        window.addEventListener('beforeunload', function() {
+            if (isDirty) {
+                performAutoSave();
+            }
+        });
+
+        // 页面可见性变化时保存（切换标签页等）
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden && isDirty) {
+                performAutoSave();
+            }
+        });
+    });
+
+    // 手动保存时清除dirty标记
+    document.getElementById('annoForm').addEventListener('submit', function() {
+        isDirty = false;
     });
 </script>
 </body>
